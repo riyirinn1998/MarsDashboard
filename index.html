@@ -27,16 +27,7 @@
   
   <body>
     
-    <div id = "testapi"> 123 </div>
-    <div class = "uk-panel-title">
-      <h2> Global Covid Deaths </h2>
-    </div>
-    
-    <div id = "marsapi"> 123 </div>
-    <div class = "uk-panel-title">
-      <h2> Mars Weather </h2>
-    </div>
-    
+    <span data-current-sol></span>
 
     <div class="uk-container uk-container-center uk-margin-top">
     <ul class="uk-grid" data-uk-grid-margin>
@@ -140,48 +131,61 @@
     <!--     <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
     <script src="https://button.glitch.me/button.js" defer></script> -->
     
-    <script>
-      
-       setTimeout(function(){
-          testapi.innerHTML = 456;
-      }, 1000);
-      
-       setTimeout(function(){
-          marsapi.innerHTML = 456;
-      }, 1000);
+        <script>
     
-    var settings = {
-      "url": "https://api.covid19api.com/summary",
-      "method": "GET",
-      "timeout": 0,
-    };
-      
-      $.ajax(settings).done(function (response) {
-        console.log(response);
-        var covid = response['Global']['TotalDeaths'];
-        console.log(covid);
-        setTimeout(function(){
-          testapi.innerHTML = covid;
-        }, 1000);
-      });
-      
-          
-    var settings2 = {
-      // "url": "api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0",
-      // "url": "api.nasa.gov/insight_weather/?api_key=DEMO_KEY&feedtype=json&ver=1.0",
-      "method": "GET",
-      "timeout": 0,
-    };
-      
-      $.ajax(settings2).done(function (response) {
-        console.log(response);
-        var weather = response['Global']['TotalDeaths'];
-        console.log(weather);
-        setTimeout(function(){
-          testapi.innerHTML = weather;
-        }, 1000);
-      });
+    const API_URL = 'https://api.nasa.gov/insight_weather/?api_key=c5dPEdEiY4toYIxZa7Zeaog1MFJl4pVCkOCb0CVs&feedtype=json&ver=1.0'
+
+    // Change this if you need to
+    const previousWeatherToggle = document.querySelector('.show-previous-weather');
+
+    const previousWeather = document.querySelector('.previous-weather')
     
+    const currentSolElement = document.querySelector('[data-current-sol]')
+
+    previousWeatherToggle.addEventListener('click', () => {
+        previousWeather.classList.toggle('show-weather')
+    })
+        
+    let selectedSolIndex
+
+    getWeather().then(sols => {
+        selectedSolIndex = sols.length - 1
+        displaySelectedSol(sols)
+    })
+        
+    function displaySelectedSol(sols){
+        const selectedSol = sols[selectedSolIndex]
+//        console.log(selectedSol)
+        currentSolElement.innerText = selectedSol.sol
+    }
+
+    function getWeather(){
+        return fetch(API_URL)
+            .then(res => res.json())
+            .then(data => {
+            const{
+                sol_keys,
+                validity_checks,
+                ...solData
+            } = data
+    //        console.log(solData)
+            return Object.entries(solData).map(([sol,data])=>{
+                return {
+                    sol:sol,
+                    maxTemp: data?.AT?.mx,
+                    minTemp: data?.AT?.mn,
+                    windSpeed: data?.HWS?.av,
+                    windDirectionDegress: data.WD.most_common?.compass_degrees,
+                    windDirectionCardinal: data.WD.most_common?.compass_point,
+                    date: new Date(data.First_UTC)
+                }
+            })
+    
+            console.log(temp)
+        })
+    }
+        
+        
     
     </script>
     
