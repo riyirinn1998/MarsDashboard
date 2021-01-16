@@ -8,7 +8,9 @@ body {
 }
 
 h1 {
-    font-style: italic;
+  font-family: 'Orbitron', sans-serif;
+  font-style: italic;
   color: #373fff;
+  
   
 }
