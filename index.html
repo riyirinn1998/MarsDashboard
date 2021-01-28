@@ -169,7 +169,11 @@
         <div class="uk-panel uk-panel-box">
           <h2>Curisoity Rover Cam</h2>
           <p>Need a peak at the weather outside? Check the curiosity rover's navigation camera to make sure.          </p>
-          <img src="https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG" alt="Mars Rover Image" width="500" height="600">
+           <!-- <img src="https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG" alt="Mars Rover Image" width="500" height="600">
+          <!--  This is the API I took it from, but I haven't worked out how to extract the image directly https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&api_key=EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf 
+           "photos":[{"id":787389,"sol":3000,"camera":{"id":26,"name":"NAVCAM","rover_id":5,"full_name":"Navigation Camera"},"img_src":"https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG","earth_date":"2021-01-13","rover":-->
+       
+          <img src="curiosityRoverJpeg" alt="Mars Rover Image" width="500" height="600">
           <!--  This is the API I took it from, but I haven't worked out how to extract the image directly https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&api_key=EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf 
            "photos":[{"id":787389,"sol":3000,"camera":{"id":26,"name":"NAVCAM","rover_id":5,"full_name":"Navigation Camera"},"img_src":"https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG","earth_date":"2021-01-13","rover":-->
         </div>
@@ -305,6 +309,18 @@ function isMetric() {
     
     </script>
     
+    <script>
+        const API_KEY_JPEG = 'EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf'
+        // Adrian's api key = 'EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf'
+        const API_URL_JPEG = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&${API_KEY_JPEG}&feedtype=json&ver=1.0`
+        // const API_URL = `
+        https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&api_key=EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf&feedtype=json&ver=1.0`
+        
+      const curiosityRoverJpeg = document.querySelector('[img_src]')
+
+    </script>
+    
+
     
   </body>
 </html>
