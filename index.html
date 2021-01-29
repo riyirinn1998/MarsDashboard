@@ -181,8 +181,44 @@
           <!--   Lin:  I can do this part and already fixed it   :)    -->
           <div class= "gallery">
             
-            <div id="rover" style="width: 40%;"> </div>
-            <div id="rover-info"> </div>
+            <ul>
+              <li>
+                <div id="rover1"></div>
+                <div id="rover-info1"></div>
+              </li>
+              <li>
+                <div id="rover2"></div>
+                <div id="rover-info2"></div>
+              </li>
+              <li>
+                <div id="rover3"></div>
+                <div id="rover-info3"></div>
+              </li>
+              <li>
+                <div id="rover4"></div>
+                <div id="rover-info4"></div>
+              </li>
+              <li>
+                <div id="rover5"></div>
+                <div id="rover-info5"></div>
+              </li>
+              <li>
+                <div id="rover6"></div>
+                <div id="rover-info6"></div>
+              </li>
+              <li>
+                <div id="rover7"></div>
+                <div id="rover-info7"></div>
+              </li>
+              <li>
+                <div id="rover8"></div>
+                <div id="rover-info8"></div>
+              </li>
+              
+              
+            </ul>
+            
+            
             
           </div>
           
@@ -347,8 +383,22 @@ function isMetric() {
 
         function processResult(data) {
            console.log(data);
-           $('#rover').append('<img src="' + data['photos'][200]['img_src'] + '" alt="Mars Rover Image">' )
-           $('#rover-info').append('<p>Earth Date: ' +data['photos'][200]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][200]['camera']['name'] +'</p>')
+           $('#rover1').append('<img src="' + data['photos'][1]['img_src'] + '" alt="Mars Rover Image">' )
+           $('#rover-info1').append('<p>Earth Date: ' +data['photos'][1]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][200]['camera']['name'] +'</p>')
+          $('#rover2').append('<img src="' + data['photos'][2]['img_src'] + '" alt="Mars Rover Image">' )
+           $('#rover-info2').append('<p>Earth Date: ' +data['photos'][12]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][200]['camera']['name'] +'</p>')
+          $('#rover3').append('<img src="' + data['photos'][3]['img_src'] + '" alt="Mars Rover Image">' )
+           $('#rover-info3').append('<p>Earth Date: ' +data['photos'][3]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][200]['camera']['name'] +'</p>')
+          $('#rover4').append('<img src="' + data['photos'][4]['img_src'] + '" alt="Mars Rover Image">' )
+           $('#rover-info4').append('<p>Earth Date: ' +data['photos'][4]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][200]['camera']['name'] +'</p>')
+          $('#rover5').append('<img src="' + data['photos'][5]['img_src'] + '" alt="Mars Rover Image">' )
+           $('#rover-info5').append('<p>Earth Date: ' +data['photos'][5]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][200]['camera']['name'] +'</p>')
+          $('#rover6').append('<img src="' + data['photos'][6]['img_src'] + '" alt="Mars Rover Image">' )
+           $('#rover-info6').append('<p>Earth Date: ' +data['photos'][6]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][200]['camera']['name'] +'</p>')
+          $('#rover7').append('<img src="' + data['photos'][7]['img_src'] + '" alt="Mars Rover Image">' )
+           $('#rover-info7').append('<p>Earth Date: ' +data['photos'][7]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][200]['camera']['name'] +'</p>')
+          $('#rover8').append('<img src="' + data['photos'][8]['img_src'] + '" alt="Mars Rover Image">' )
+           $('#rover-info8').append('<p>Earth Date: ' +data['photos'][8['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][200]['camera']['name'] +'</p>')
         }
 
 
