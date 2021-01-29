@@ -40,3 +40,13 @@ h1 {
   line-height:100px;
   
 }
+
+.dashboard-design{
+  border-style: solid;
+  border-width: 3px;
+  border-radius: 10px;
+  border-color: #2DFFF7;
+  background-color: rgba(196,196,196,0.1);
+}
+
+/* hhellooooooooiiii */
