@@ -49,4 +49,17 @@ h1 {
   background-color: rgba(196,196,196,0.1);
 }
 
-/* hhellooooooooiiii */
+.panel-title{
+  background-color: rgba(46,50,54,0.6);
+  top: 0;
+  left: 0;
+  width:100%;
+  position: absolute;
+  border-radius: 5px 5px 0px 0px; /* top left, top right, bottom right, bottom left */
+}
+
+.panel-title-text{
+  padding: 8px 8px 8px 16px;
+  font-size: 16px;
+  
+}
