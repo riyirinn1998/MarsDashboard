@@ -176,6 +176,10 @@
           <img src="curiosityRoverJpeg" alt="Mars Rover Image" width="500" height="600">
           <!--  This is the API I took it from, but I haven't worked out how to extract the image directly https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&api_key=EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf 
            "photos":[{"id":787389,"sol":3000,"camera":{"id":26,"name":"NAVCAM","rover_id":5,"full_name":"Navigation Camera"},"img_src":"https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG","earth_date":"2021-01-13","rover":-->
+          
+          <!--   Yilin:  I can do this part and already fixed it   :)    -->
+          <div id="rover"></p>
+          
         </div>
       </li>
       
@@ -337,9 +341,8 @@ function isMetric() {
 
         function processResult(data) {
            console.log(data);
-           $('.panel-1-indicators').append(data['weather'][0].description)
-           $('.panel-1-indicators').append('<br /> wind speed ' + data['wind']['speed'] + ' m/s')
-           $('.panel-1-indicators').append('<br /> temperature ' + Math.round(data['main']['temp']-273.15) + '&#8451;')
+           $('#rover').append('<img src="' + data['photos'][0]['img_src'] + '" alt="Mars Rover Image" width="500" height="600">' )
+           $('.panel-1-indicators').append('<br /> wind speed ' + data['wind']['speed'])
         }
 
 
