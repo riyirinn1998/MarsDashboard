@@ -39,7 +39,6 @@ html{
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
-  
 }
 
 h1 {
@@ -48,7 +47,13 @@ h1 {
   color: #373fff;
   font-size: 40px;
   line-height:100px;
-  
+}
+
+h3 {
+  font-family: 'Orbitron', sans-serif;
+  font-style: italic;
+  color: #373fff;
+  font-size: 16px;
 }
 
 .dashboard-design{
@@ -74,6 +79,10 @@ h1 {
   padding: 8px 8px 8px 16px;
   font-size: 18px;
   text-shadow: 0 0 3px rgba(255,0,0,0.5);
+}
+
+.uk-grid{
+  margin-top: 40px;
 }
 
 
