@@ -111,7 +111,7 @@
             <h2 class="panel-title-text">Mars Map</h2>
           </div>
           
-          <iframe src="https://www.google.com/mars/#map=visible">
+          <iframe width="800" height="600" scrolling="no" hspace="-100" vspace="-150" src="https://www.google.com/mars/#map=visible">
             
           </iframe>
           
@@ -163,7 +163,10 @@
       <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-3">
         <div class="uk-panel uk-panel-box">
           <h2>Spacesuits Recommendations</h2>
-          <p>Today you need to: </p>
+          <p>If the temperature over </p>
+          <div>
+            
+          </div>
           
 
         </div>
@@ -372,12 +375,12 @@ function isMetric() {
            console.log(data);
            $('#rover1').append('<img src="' + data['photos'][1]['img_src'] + '" alt="Mars Rover Image1">' )
            $('#rover-info1').append('<p>Earth Date: ' +data['photos'][1]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][1]['camera']['name'] +'</p>')
-          $('#rover2').append('<img src="' + data['photos'][2]['img_src'] + '" alt="Mars Rover Image2">' )
-           $('#rover-info2').append('<p>Earth Date: ' +data['photos'][12]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][2]['camera']['name'] +'</p>')
-          $('#rover3').append('<img src="' + data['photos'][3]['img_src'] + '" alt="Mars Rover Image3">' )
-           $('#rover-info3').append('<p>Earth Date: ' +data['photos'][3]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][3]['camera']['name'] +'</p>')
-          $('#rover4').append('<img src="' + data['photos'][4]['img_src'] + '" alt="Mars Rover Image4">' )
-           $('#rover-info4').append('<p>Earth Date: ' +data['photos'][4]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][4]['camera']['name'] +'</p>')
+          $('#rover2').append('<img src="' + data['photos'][20]['img_src'] + '" alt="Mars Rover Image2">' )
+           $('#rover-info2').append('<p>Earth Date: ' +data['photos'][20]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][20]['camera']['name'] +'</p>')
+          $('#rover3').append('<img src="' + data['photos'][30]['img_src'] + '" alt="Mars Rover Image3">' )
+           $('#rover-info3').append('<p>Earth Date: ' +data['photos'][30]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][30]['camera']['name'] +'</p>')
+          $('#rover4').append('<img src="' + data['photos'][40]['img_src'] + '" alt="Mars Rover Image4">' )
+           $('#rover-info4').append('<p>Earth Date: ' +data['photos'][40]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][40]['camera']['name'] +'</p>')
                   }
 
 

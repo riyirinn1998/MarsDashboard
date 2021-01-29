@@ -27,16 +27,19 @@ a{text-decoration: none;}
 
 /* font-family: 'Orbitron', sans-serif; */
 
-
 html{
-    background-image: url("https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Femilio-garcia-BnXwRYu-S90-unsplash.jpg?v=1611915774890);
-  background-color: red;
+  background-color: #2C435D;
+  background-image: url("https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Fmars-bg.png?v=1611917362312");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 body {
   font-family: helvetica, arial, sans-serif;
   margin: 2em;
-
+  
 }
 
 h1 {
@@ -84,6 +87,7 @@ h1 {
 
 .gallery ul li img {
   
-  
+  height:200px;
+  width: 250px;
   
 }
