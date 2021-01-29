@@ -323,5 +323,29 @@ function isMetric() {
     
 
     
+    
+<!--   Rover image API   -->
+    <script>
+
+        var endpoint = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=';
+        var api_key = 'F9t29gnyj1ihsdObA7VYKNRFynfJtcsCh6Ud8frp';
+      // Yilin's api key = 'F9t29gnyj1ihsdObA7VYKNRFynfJtcsCh6Ud8frp'
+        var url = endpoint + api_key ;
+        console.log('Fetching weather data from -' + url);
+
+        $.getJSON(url, processResult);
+
+        function processResult(data) {
+           console.log(data);
+           $('.panel-1-indicators').append(data['weather'][0].description)
+           $('.panel-1-indicators').append('<br /> wind speed ' + data['wind']['speed'] + ' m/s')
+           $('.panel-1-indicators').append('<br /> temperature ' + Math.round(data['main']['temp']-273.15) + '&#8451;')
+        }
+
+
+
+
+    </script>
+    
   </body>
 </html>
