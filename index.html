@@ -36,7 +36,7 @@
        <p class="date__day" data-current-date></p>
      </div>
 
-     <div class="temp">
+<!--      <div class="temp">
        <h2 class="section-title">Temperature</h2>
        <p class="reading">
          High:
@@ -48,9 +48,9 @@
          <span data-current-temp-low></span>
          °<span data-temp-unit></span>
         </p>
-     </div>
+     </div> -->
 
-     <div class="wind">
+<!--      <div class="wind">
        <h2 class="section-title">Wind</h2>
        <p class="reading">
          <span data-wind-speed></span>
@@ -62,19 +62,11 @@
 
          <!-- update --direction custom prop
               to change arrow direction -->
-         <div class="wind__arrow" data-wind-direction-arrow></div>
+<!--          <div class="wind__arrow" data-wind-direction-arrow></div> -->
        </div>
-     </div> 
-
-     <div class="unit">
-       <label for="cel">°C</label>
-       <input type="radio" id="cel" name="unit" checked>
-       <!-- when unit__toggle is clicked
-            checkbox needs to change -->
-       <button class="unit__toggle" data-unit-toggle></button>
-       <label for="fah">°F</label>
-       <input type="radio" id="fah" name="unit">
      </div>
+
+
     
     
     
@@ -86,6 +78,13 @@
       <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-2-3">
         <div class="uk-panel uk-panel-box">
           <h1>Mars Right Now</h1>
+               <div class="date">
+       <h2 class="section-title section-title--date">
+         Sol 
+         <span data-current-sol>375</span>
+        </h2>
+       <p class="date__day" data-current-date></p>
+     </div>
           <p>
             You are one of the first settlers in the Mars colony, which has not yet been terraformed. 
             You need to do structural repairs outside of the base which has a sealed atmosphere, so need support from NASA to give you a dashboard on the weather outside of the base. 
@@ -110,10 +109,12 @@
           <div class="panel-title">
             <h2 class="panel-title-text">Mars Map</h2>
           </div>
-          
-          <iframe width="800" height="600" scrolling="no" hspace="-100" vspace="-150" src="https://www.google.com/mars/#map=visible">
+          <div >
+            <iframe width="700" height="600" scrolling="no" hspace="-500" vspace="-300" src="https://www.google.com/mars/#lat=-4.740675&lon=-104.414062&zoom=2&map=visible">
             
-          </iframe>
+            </iframe>
+          </div>
+          
           
         </div>
       </li>
@@ -128,8 +129,10 @@
       
      <!--   row3 col1-2  Weather   -->
       <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-2-3">
-        <div class="uk-panel uk-panel-box">
-          <h2>Weather</h2>
+        <div class="uk-panel uk-panel-box dashboard-design">
+          <div class="panel-title">
+            <h2 class="panel-title-text">Weather</h2>
+          </div>
           
             <!--     weather details       -->
           <ul class="uk-grid" data-uk-grid-margin>
@@ -137,6 +140,16 @@
               <!--   Temperature        -->
              <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-1">
                <h3>Temperature</h3>
+              <p class="reading">
+                High:
+                <span data-current-temp-high></span>
+                °<span data-temp-unit></span>
+              </p>
+              <p class="reading">
+                Low:
+                <span data-current-temp-low></span>
+                °<span data-temp-unit></span>
+              </p>
              </li>
              
              <!--   Atmospheric pressure     -->
@@ -146,12 +159,28 @@
              
              <!--     Wind direction and speed     -->
              <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-2">
-               <h3>Atmospheric pressure </h3>
+              <h3>Atmospheric pressure </h3>
+                <p class="reading">
+                <span data-wind-speed></span>
+                <span data-speed-unit></span>
+                <p class="sr-only" data-wind-direction-text></p>
+              </p>
              </li>
+        
+             
              
              <!--     Atmospheric Opacity     -->
              <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-1">
                <h3>Atmospheric Opacity</h3>
+               <div class="unit">
+               <label for="cel">°C</label>
+               <input type="radio" id="cel" name="unit" checked>
+               <!-- when unit__toggle is clicked
+                    checkbox needs to change -->
+               <button class="unit__toggle" data-unit-toggle></button>
+               <label for="fah">°F</label>
+               <input type="radio" id="fah" name="unit">
+             </div>
              </li>
            </ul>
 
@@ -162,13 +191,12 @@
       <!--   row3 col3 Spacesuits -->
       <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-3">
         <div class="uk-panel uk-panel-box">
+          <div class="spacesuits"> 
           <h2>Spacesuits Recommendations</h2>
-          <p>If the temperature over </p>
-          <div>
-            
-          </div>
+          <h3>If the pressure over 700 pascal, you need to wear:</h3>
+          <p>Space suit 1</p>
           
-
+          </div>
         </div>
       </li>
       
@@ -215,6 +243,24 @@
         </div>
       </li>
       
+       
+
+        </div>
+      </li>
+      
+      <!--  row 5 Mars Rover image -->     
+      <li class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-1">
+        <div class="uk-panel uk-panel-box">
+          <h2>Weather History</h2>
+          <iframe title="Martian Weather Data for the last 500 Sols" aria-label="Interactive line chart" id="datawrapper-chart-W6i09" src="https://datawrapper.dwcdn.net/W6i09/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+</script>
+           
+          
+            
+          
+        </div>
+      </li>
+
 
     </ul>
   </div>
