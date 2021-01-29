@@ -201,8 +201,10 @@
       
       <!--  row 4 Mars Rover image -->     
       <li class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-1">
-        <div class="uk-panel uk-panel-box">
-          <h2>Curisoity Rover Cam</h2>
+        <div class="uk-panel uk-panel-box dashboard-design">
+          <div class="panel-title">
+            <h2 class="panel-title-text">Curisoity Rover Cam</h2>
+          </div>
           <p>Need a peak at the weather outside? Check the curiosity rover's navigation camera to make sure.          </p>
            <!-- <img src="https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG" alt="Mars Rover Image" width="500" height="600">
           <!--  This is the API I took it from, but I haven't worked out how to extract the image directly https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&api_key=EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf 
@@ -244,13 +246,15 @@
             
       <!--  row 5 Mars Rover image -->     
       <li class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-1">
-       dashboard-design">
-          <div class="panel-title">
-            <h2 class="panel-title-text">Weather </h2>
-          </div>
-
-          <iframe title="Martian Weather Data for the last 500 Sols" aria-label="Interactive line chart" id="datawrapper-chart-W6i09" src="https://datawrapper.dwcdn.net/W6i09/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-</script>
+        <div class="uk-panel uk-panel-box dashboard-design">
+            <div class="panel-title">
+              <h2 class="panel-title-text">Weather History</h2>
+              <br>
+            </div>
+            <div>
+            <iframe title="Martian Weather Data for the last 500 Sols" aria-label="Interactive line chart" id="datawrapper-chart-W6i09" src="https://datawrapper.dwcdn.net/W6i09/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+            </script>
+            </div>
           </div>
         </div>
       </li>
@@ -420,13 +424,17 @@ function isMetric() {
         function processResult(data) {
            console.log(data);
            $('#rover1').append('<img src="' + data['photos'][1]['img_src'] + '" alt="Mars Rover Image1">' )
-           $('#rover-info1').append('<p>Earth Date: ' +data['photos'][1]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][1]['camera']['name'] +'</p>')
-          $('#rover2').append('<img src="' + data['photos'][20]['img_src'] + '" alt="Mars Rover Image2">' )
-           $('#rover-info2').append('<p>Earth Date: ' +data['photos'][20]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][20]['camera']['name'] +'</p>')
-          $('#rover3').append('<img src="' + data['photos'][30]['img_src'] + '" alt="Mars Rover Image3">' )
-           $('#rover-info3').append('<p>Earth Date: ' +data['photos'][30]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][30]['camera']['name'] +'</p>')
-          $('#rover4').append('<img src="' + data['photos'][40]['img_src'] + '" alt="Mars Rover Image4">' )
-           $('#rover-info4').append('<p>Earth Date: ' +data['photos'][40]['earth_date'] + '</p>' + '<p>Camera Name:' + data['photos'][40]['camera']['name'] +'</p>')
+           $('#rover-info1').append('<p>Earth Date: ' +data['photos'][1]['earth_date'] + '</p>')
+          $('#rover-info1').append('<p>Camera Name: ' + data['photos'][1]['camera']['full_name'] +'</p>')
+          $('#rover-info1').append('<p>Camera Name: ' + data['photos'][1]['camera']['full_name'] +'</p>')
+          $('#rover-info1').append('<p>Camera Name: ' + data['photos'][1]['camera']['full_name'] +'</p>')
+          
+          $('#rover2').append('<img src="' + data['photos'][120]['img_src'] + '" alt="Mars Rover Image2">' )
+           $('#rover-info2').append('<p>Earth Date: ' +data['photos'][120]['earth_date'] + '</p>' + '<p>Camera Name: ' + data['photos'][120]['camera']['full_name'] +'</p>')
+          $('#rover3').append('<img src="' + data['photos'][333]['img_src'] + '" alt="Mars Rover Image3">' )
+           $('#rover-info3').append('<p>Earth Date: ' +data['photos'][333]['earth_date'] + '</p>' + '<p>Camera Name: ' + data['photos'][333]['camera']['full_name'] +'</p>')
+          $('#rover4').append('<img src="' + data['photos'][555]['img_src'] + '" alt="Mars Rover Image4">' )
+           $('#rover-info4').append('<p>Earth Date: ' +data['photos'][555]['earth_date'] + '</p>' + '<p>Camera Name: ' + data['photos'][555]['camera']['full_name'] +'</p>')
                   }
 
 
