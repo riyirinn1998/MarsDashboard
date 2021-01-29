@@ -173,13 +173,14 @@
           <!--  This is the API I took it from, but I haven't worked out how to extract the image directly https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&api_key=EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf 
            "photos":[{"id":787389,"sol":3000,"camera":{"id":26,"name":"NAVCAM","rover_id":5,"full_name":"Navigation Camera"},"img_src":"https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG","earth_date":"2021-01-13","rover":-->
        
-          <img src="curiosityRoverJpeg" alt="Mars Rover Image" width="500" height="600">
+          <!-- <img src="curiosityRoverJpeg" alt="Mars Rover Image" width="500" height="600"> -->
           <!--  This is the API I took it from, but I haven't worked out how to extract the image directly https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&api_key=EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf 
            "photos":[{"id":787389,"sol":3000,"camera":{"id":26,"name":"NAVCAM","rover_id":5,"full_name":"Navigation Camera"},"img_src":"https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG","earth_date":"2021-01-13","rover":-->
           
-          <!--   Yilin:  I can do this part and already fixed it   :)    -->
-          <div id="rover"></p>
           
+          <!--   Lin:  I can do this part and already fixed it   :)    -->
+          <div id="rover" style="width: 40%;"> </div>
+          <div id="rover-earth-date"> </div>
         </div>
       </li>
       
@@ -341,8 +342,8 @@ function isMetric() {
 
         function processResult(data) {
            console.log(data);
-           $('#rover').append('<img src="' + data['photos'][0]['img_src'] + '" alt="Mars Rover Image" width="500" height="600">' )
-           $('.panel-1-indicators').append('<br /> wind speed ' + data['wind']['speed'])
+           $('#rover').append('<img src="' + data['photos'][200]['img_src'] + '" alt="Mars Rover Image">' )
+           $('#rover-earth-date').append('<p>Earth Date:' +data['photos'][200]['earth_date'] + '</p>')
         }
 
 
