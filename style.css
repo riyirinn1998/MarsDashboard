@@ -46,7 +46,7 @@ h1 {
   font-style: italic;
   color: #373fff;
   font-size: 40px;
-  line-height:100px;
+  line-height: 1.5;
 }
 
 h3 {
@@ -79,6 +79,7 @@ h3 {
   padding: 8px 8px 8px 16px;
   font-size: 18px;
   text-shadow: 0 0 3px rgba(255,0,0,0.5);
+  line-height: 1.2;
 }
 
 .uk-grid{
@@ -99,4 +100,16 @@ h3 {
   height:200px;
   width: 250px;
   
+}
+
+.spacesuits{
+  margin-top: 50px;
+}
+
+#paragraph{
+  margin-top: 30px;
+}
+
+#weather-history-chart{
+  margin-top: 40px;
 }
