@@ -194,7 +194,7 @@
           
           <div class="row spacesuits" data-aos= "fade-up" data-aos-delay>
             <h1>If the pressure over 700 pascal, you need to wear:</h1>
-             <p text-align:center>Space suit 1</p>
+             <p style="text-align:center">Space suit 1</p>
              <img src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2FAstronauts_HP2.png?v=1612019127125" class="spacesuits-img" alt="Spacesuits1">
             
           
@@ -258,21 +258,8 @@
             </script>
             </div>
           </div>
-        </div>
-      </li>
        
-
-        </div>
-      </li>
       
-
-
-
-    </ul>
-
-    
-
-  </div>
 
     <div id="site-footer">
       
@@ -513,26 +500,23 @@ function isMetric() {
           $('#rover1').append('<img src="' + data['photos'][1]['img_src'] + '" alt="Mars Rover Image1">' )
           $('#rover-info1').append('<p>Earth Date: ' + data['photos'][1]['earth_date'] + '</p>')
           $('#rover-info1').append('<p>Camera Name: ' + data['photos'][1]['camera']['full_name'] +'</p>')
-          $('#rover-info1').append('<p>Camera Name: ' + data['photos'][1]['camera']['full_name'] +'</p>')
-          $('#rover-info1').append('<p>Camera Name: ' + data['photos'][1]['camera']['full_name'] +'</p>')
+          $('#rover-info1').append('<p>Rover Name: ' + data['photos'][1]['rover']['name'] +'</p>')
           
           $('#rover2').append('<img src="' + data['photos'][130]['img_src'] + '" alt="Mars Rover Image2">' )
           $('#rover-info2').append('<p>Earth Date: ' + data['photos'][130]['earth_date'] + '</p>')
           $('#rover-info2').append('<p>Camera Name: ' + data['photos'][130]['camera']['full_name'] +'</p>')
-          $('#rover-info2').append('<p>Camera Name: ' + data['photos'][130]['camera']['full_name'] +'</p>')
-          $('#rover-info2').append('<p>Camera Name: ' + data['photos'][130]['camera']['full_name'] +'</p>')
+          $('#rover-info2').append('<p>Rover Name: ' + data['photos'][130]['rover']['name'] +'</p>')
           
           $('#rover3').append('<img src="' + data['photos'][333]['img_src'] + '" alt="Mars Rover Image3">' )
           $('#rover-info3').append('<p>Earth Date: ' + data['photos'][333]['earth_date'] + '</p>')
           $('#rover-info3').append('<p>Camera Name: ' + data['photos'][333]['camera']['full_name'] +'</p>')
-          $('#rover-info3').append('<p>Camera Name: ' + data['photos'][333]['camera']['full_name'] +'</p>')
-          $('#rover-info3').append('<p>Camera Name: ' + data['photos'][333]['camera']['full_name'] +'</p>')
+          $('#rover-info3').append('<p>Rover Name: ' + data['photos'][333]['rover']['name'] +'</p>')
           
           $('#rover4').append('<img src="' + data['photos'][555]['img_src'] + '" alt="Mars Rover Image4">' )
           $('#rover-info4').append('<p>Earth Date: ' + data['photos'][555]['earth_date'] + '</p>')
           $('#rover-info4').append('<p>Camera Name: ' + data['photos'][555]['camera']['full_name'] +'</p>')
-          $('#rover-info4').append('<p>Camera Name: ' + data['photos'][555]['camera']['full_name'] +'</p>')
-          $('#rover-info4').append('<p>Camera Name: ' + data['photos'][555]['camera']['full_name'] +'</p>')
+          $('#rover-info4').append('<p>Rover Name: ' + data['photos'][555]['rover']['name'] +'</p>')
+          
           
           }
 
