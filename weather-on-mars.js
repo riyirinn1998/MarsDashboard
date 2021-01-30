@@ -1,7 +1,7 @@
 const app = document.getElementById('weather-data');
 
         const container = document.createElement('div');
-        container.setAttribute('class', 'container');
+        container.setAttribute('class', 'weather-grid');
 
         app.appendChild(container);
 
@@ -24,8 +24,8 @@ const app = document.getElementById('weather-data');
                 console.log(data.min_gts_temp + " Min GTS Temp");
                 console.log(data.max_gts_temp + " Max GTS Temp");
 
-                var dataArray = ["Season: " + data.season, "Min Temp: " + data.min_temp + " °C", "Max Temp:" + data.max_temp + " °C", "Atmospheric Opacity: " + data.atmo_opacity, "Sunset: " + data.sunset, "Sunrise: " + data.sunrise, "Min Ground Temp: " + data.min_gts_temp + " °C", "Max Ground Temp: " + data.max_gts_temp + " °C"];
-                
+                var dataArray = ["Sunrise: " + data.sunrise, "Min Temp: " + data.min_temp + " °C", "Min Ground Temp: " + data.min_gts_temp + " °C","Season: " + data.season,  "Sunset: " + data.sunset,"Max Temp: " + data.max_temp + " °C",     "Max Ground Temp: " + data.max_gts_temp + " °C", "Atmospheric Opacity: " + data.atmo_opacity];
+              
                 var arrayLength = dataArray.length;
                 for (var i = 0; i < arrayLength; i++) {
                     const div = document.createElement('div');
