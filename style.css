@@ -34,6 +34,7 @@ html{
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-attachment: fixed;
   color: #DFDFDF;
 }
 
@@ -125,6 +126,10 @@ h3 {
   margin-top: 30px;
 }
 
+#mars-rn{
+  margin-top: 60px;
+}
+
 #weather-history-chart{
   margin-top: 40px;
 }
@@ -132,7 +137,7 @@ h3 {
 .weather-grid{
   display: grid;
   grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(2,1fr);
+  grid-template-rows: repeat(2,75px);
 }
 
 #weather-data{
@@ -179,4 +184,8 @@ h3 {
 
 .adfy-member-insta img{
   width: 100%;
+}
+
+#podcast{
+  margin-top: 30px;
 }
