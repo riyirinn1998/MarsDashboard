@@ -120,6 +120,7 @@ h3 {
 
 .spacesuits{
   margin-top: 50px;
+  
 }
 
 #paragraph{
@@ -188,4 +189,72 @@ h3 {
 
 #podcast{
   margin-top: 30px;
+}
+
+.space{
+background: rgb(0,0,0); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%, rgba(214,224,255,1) 6%, rgba(100,130,168,1) 18%, rgba(73,79,104,1) 31%, rgba(0,0,0,1) 52%, rgba(0,0,0,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(255,255,255,1)), color-stop(6%,rgba(214,224,255,1)), color-stop(18%,rgba(100,130,168,1)), color-stop(31%,rgba(73,79,104,1)), color-stop(52%,rgba(0,0,0,1)), color-stop(100%,rgba(0,0,0,1))); /* Chrome,Safari4+ */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(214,224,255,1) 6%,rgba(100,130,168,1) 18%,rgba(73,79,104,1) 31%,rgba(0,0,0,1) 52%,rgba(0,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(214,224,255,1) 6%,rgba(100,130,168,1) 18%,rgba(73,79,104,1) 31%,rgba(0,0,0,1) 52%,rgba(0,0,0,1) 100%); /* Opera 12+ */
+background: -ms-radial-gradient(center, ellipse cover,  rgba(255,255,255,1) 0%,rgba(214,224,255,1) 6%,rgba(100,130,168,1) 18%,rgba(73,79,104,1) 31%,rgba(0,0,0,1) 52%,rgba(0,0,0,1) 100%); /* IE10+ */
+/* background: radial-gradient(ellipse at center,  rgba(255,255,255,1) 0%,rgba(214,224,255,1) 6%,rgba(100,130,168,1) 18%,rgba(73,79,104,1) 31%,rgba(0,0,0,1) 52%,rgba(0,0,0,1) 100%); /* W3C */ */
+/* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#000000',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */ */
+
+padding-top:10px;
+padding-left:10px;
+width:300px;
+height:200px;
+
+}
+
+.planet {
+	width:120px;
+	height:120px;
+	border-radius:120px;
+/* 	background-size: 374px; */
+/* 	background-color:#FFF; */
+	margin-left:156px;
+	margin-top:70px;
+	transform: rotate(20deg);
+	-webkit-transform: rotate(20deg);
+	animation: rotate 25s infinite linear;
+	-webkit-animation: rotate 25s infinite linear;
+	-moz-animation: rotate 25s infinite linear;
+  -o-animation: rotate 25s infinite linear;
+	padding-top:4px;
+}
+				
+.yours{
+  background: url(https://3.bp.blogspot.com/_9DvzmslTIME/TQrUKY5hQ_I/AAAAAAAAAjA/5esqGHQ-PBk/s400/planet_Muunilinst1200.png);
+  box-shadow:inset 8px 8px 10px rgba(255,255,255,0.7),
+  inset -19px -19px 70px rgba(0,0,0,0.9),
+  inset -5px -5px 8px rgba(0,0,0,0.7),
+  -5px -5px 10px 1px rgba(255,255,255,0.5),
+  5px 5px 30px 1px rgba(255,80,80,0.5);
+}
+
+.left{
+  float:left;
+  width:400px;
+}
+
+@keyframes rotate {
+  from {background-position:0 0;}
+  to {background-position:400px 0;}
+}
+
+@-webkit-keyframes rotate {
+  from {background-position:0 0;}
+  to {background-position:400px 0;}
+}
+
+@-moz-keyframes rotate {
+  from {background-position:0 0;}
+  to {background-position:400px 0;}
+}
+
+@-o-keyframes rotate {
+  from {background-position:0 0;}
+  to {background-position:400px 0;}
 }

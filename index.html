@@ -51,6 +51,13 @@
   
   <body>
     
+    <div class="left">
+<div class="space">
+<div class="planet yours"></div>
+  </div>
+    
+</div>
+    
     <!-- UI Kit Code -->
     <div class="uk-container uk-container-center uk-margin-top">
     <ul class="uk-grid" data-uk-grid-margin>
@@ -182,9 +189,9 @@
             <h2 class="panel-title-text">Spacesuits Recommendations</h2>
           </div> 
           
-              <div class="spacesuits">
-                <h3>If the pressure over 700 pascal, you need to wear:</h3>
-                  <p>Space suit 1</p>
+          <div class="spacesuits">
+            <h3>If the pressure over 700 pascal, you need to wear:</h3>
+             <p>Space suit 1</p>
             
           
           </div>
@@ -243,7 +250,7 @@
               <h2 class="panel-title-text">Weather History</h2>
             </div>
             <div id="weather-history-chart">
-            <iframe title="Martian Weather Data for the last 500 Sols" aria-label="Interactive line chart" id="datawrapper-chart-W6i09" src="https://datawrapper.dwcdn.net/W6i09/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+            <iframe title="Martian Weather Data for the last 500 Sols" aria-label="Interactive line chart" id="datawrapper-chart-W6i09" src="https://datawrapper.dwcdn.net/W6i09/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
             </script>
             </div>
           </div>
@@ -488,20 +495,32 @@ function isMetric() {
         $.getJSON(url, processResult);
 
         function processResult(data) {
-           console.log(data);
-           $('#rover1').append('<img src="' + data['photos'][1]['img_src'] + '" alt="Mars Rover Image1">' )
-           $('#rover-info1').append('<p>Earth Date: ' +data['photos'][1]['earth_date'] + '</p>')
+          console.log(data);
+          $('#rover1').append('<img src="' + data['photos'][1]['img_src'] + '" alt="Mars Rover Image1">' )
+          $('#rover-info1').append('<p>Earth Date: ' + data['photos'][1]['earth_date'] + '</p>')
           $('#rover-info1').append('<p>Camera Name: ' + data['photos'][1]['camera']['full_name'] +'</p>')
           $('#rover-info1').append('<p>Camera Name: ' + data['photos'][1]['camera']['full_name'] +'</p>')
           $('#rover-info1').append('<p>Camera Name: ' + data['photos'][1]['camera']['full_name'] +'</p>')
           
-          $('#rover2').append('<img src="' + data['photos'][120]['img_src'] + '" alt="Mars Rover Image2">' )
-           $('#rover-info2').append('<p>Earth Date: ' +data['photos'][120]['earth_date'] + '</p>' + '<p>Camera Name: ' + data['photos'][120]['camera']['full_name'] +'</p>')
+          $('#rover2').append('<img src="' + data['photos'][130]['img_src'] + '" alt="Mars Rover Image2">' )
+          $('#rover-info2').append('<p>Earth Date: ' + data['photos'][130]['earth_date'] + '</p>')
+          $('#rover-info2').append('<p>Camera Name: ' + data['photos'][130]['camera']['full_name'] +'</p>')
+          $('#rover-info2').append('<p>Camera Name: ' + data['photos'][130]['camera']['full_name'] +'</p>')
+          $('#rover-info2').append('<p>Camera Name: ' + data['photos'][130]['camera']['full_name'] +'</p>')
+          
           $('#rover3').append('<img src="' + data['photos'][333]['img_src'] + '" alt="Mars Rover Image3">' )
-           $('#rover-info3').append('<p>Earth Date: ' +data['photos'][333]['earth_date'] + '</p>' + '<p>Camera Name: ' + data['photos'][333]['camera']['full_name'] +'</p>')
+          $('#rover-info3').append('<p>Earth Date: ' + data['photos'][333]['earth_date'] + '</p>')
+          $('#rover-info3').append('<p>Camera Name: ' + data['photos'][333]['camera']['full_name'] +'</p>')
+          $('#rover-info3').append('<p>Camera Name: ' + data['photos'][333]['camera']['full_name'] +'</p>')
+          $('#rover-info3').append('<p>Camera Name: ' + data['photos'][333]['camera']['full_name'] +'</p>')
+          
           $('#rover4').append('<img src="' + data['photos'][555]['img_src'] + '" alt="Mars Rover Image4">' )
-           $('#rover-info4').append('<p>Earth Date: ' +data['photos'][555]['earth_date'] + '</p>' + '<p>Camera Name: ' + data['photos'][555]['camera']['full_name'] +'</p>')
-                  }
+          $('#rover-info4').append('<p>Earth Date: ' + data['photos'][555]['earth_date'] + '</p>')
+          $('#rover-info4').append('<p>Camera Name: ' + data['photos'][555]['camera']['full_name'] +'</p>')
+          $('#rover-info4').append('<p>Camera Name: ' + data['photos'][555]['camera']['full_name'] +'</p>')
+          $('#rover-info4').append('<p>Camera Name: ' + data['photos'][555]['camera']['full_name'] +'</p>')
+          
+          }
 
 
 
