@@ -47,6 +47,11 @@ h1 {
   color: #373fff;
   font-size: 40px;
   line-height: 1.5;
+  padding: 8px 8px 8px 16px;
+}
+
+.date{
+  margin-top: 70px;
 }
 
 h3 {
