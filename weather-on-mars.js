@@ -24,7 +24,7 @@ const app = document.getElementById('weather-data');
                 console.log(data.min_gts_temp + " Min GTS Temp");
                 console.log(data.max_gts_temp + " Max GTS Temp");
 
-                var dataArray = ["Sol: " + data.sol, "Season: " + data.season, "Min Temperature (Air): " + data.min_temp + " °C", "Max Temperature (Air): " + data.max_temp + " °C", "Atmospheric Opacity: " + data.atmo_opacity, "Sunset: " + data.sunset, "Sunrise: " + data.sunrise, "Min Ground Temperature: " + data.min_gts_temp + " °C", "Max Ground Temperature: " + data.max_gts_temp + " °C"];
+                var dataArray = ["Season: " + data.season, "Min Temp: " + data.min_temp + " °C", "Max Temp:" + data.max_temp + " °C", "Atmospheric Opacity: " + data.atmo_opacity, "Sunset: " + data.sunset, "Sunrise: " + data.sunrise, "Min Ground Temp: " + data.min_gts_temp + " °C", "Max Ground Temp: " + data.max_gts_temp + " °C"];
                 
                 var arrayLength = dataArray.length;
                 for (var i = 0; i < arrayLength; i++) {
