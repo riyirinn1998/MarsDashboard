@@ -103,11 +103,17 @@ h3 {
 }
 
 
+.gallery ul {
+  overflow:hidden;
+}
+
 .gallery ul li {
   
   display:inline-block;
   width: 250px;
-  height:300px;
+  height: 300px;
+  margin: 10px;
+  backgroud-color: blue;
   
 }
 
