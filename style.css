@@ -119,17 +119,14 @@ h3 {
 }
 
 .spacesuits{
-  margin-top: 50px;
+  margin-top: 30px;
   
 }
 
 .spacesuits h1{
   font-family: 'Orbitron', sans-serif;
-  color: rgb(223,223,223);
-  padding: 8px 8px 8px 16px;
-  font-size: 18px;
-  text-shadow: 0 0 3px rgba(255,0,0,0.5);
-  line-height: 1.2;
+  color: white;
+  font-size: 12px;
 }
 
 #paragraph{
@@ -140,8 +137,16 @@ h3 {
   margin-top: 60px;
 }
 
+#weather-history-section{
+  background-color: rgba(15,15,15,0.8);
+}
+
 #weather-history-chart{
   margin-top: 40px;
+}
+
+.chart #footer, .chart .dw-chart-footer{
+  color: rgba(15,15,15,0.8);
 }
 
 .weather-grid{
@@ -299,13 +304,13 @@ h3 {
 }
 
 .stars, .twinkling, .clouds {
-  position: absolute;
+  position: fixed;
   top:0;
   left:0;
   right:0;
   bottom:0;
   width:100%;
-  height:200%;
+  height:100%;
   display:block;
   z-index: -3;
 }
