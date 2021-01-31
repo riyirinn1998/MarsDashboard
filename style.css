@@ -7,27 +7,113 @@ Licensed under the BSD License.
 http://yuilibrary.com/license/
 */
 
-html{color:#000;background:#FFF}
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}
-table{border-collapse:collapse;border-spacing:0}
-fieldset,img{border:0}
-address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
-ol,ul{list-style:none}
-caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}
-abbr,acronym{border:0;font-variant:normal}
-sup{vertical-align:text-top}sub{vertical-align:text-bottom}
-input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}
-legend{color:#000}
-#yui3-css-stamp.cssreset{display:none}
-a{text-decoration: none;}
-
-
+html {
+  color: #000;
+  background: #FFF;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+q:before,
+q:after {
+  content: "";
+}
+abbr,
+acronym {
+  border: 0;
+  font-variant: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  *font-size: 100%;
+}
+legend {
+  color: #000;
+}
+#yui3-css-stamp.cssreset {
+  display: none;
+}
+a {
+  text-decoration: none;
+}
 
 /* CSS files add styling rules to your content */
 
 /* font-family: 'Orbitron', sans-serif; */
 
-html{
+html {
   background-color: #2C435D;
   background-image: url("https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Fmars-bg.png?v=1611917362312");
   -webkit-background-size: cover;
@@ -43,17 +129,16 @@ body {
   margin: 2em;
 }
 
-.uk-panel{
+.uk-panel {
   color: #DFDFDF;
 }
 
-a{
+a {
   color: #DFDFDF;
-
 }
 
 h1 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-style: italic;
   color: #373fff;
   font-size: 40px;
@@ -61,87 +146,78 @@ h1 {
   padding: 8px 8px 8px 16px;
 }
 
-.date{
+.date {
   margin-top: 70px;
 }
 
 h3 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-style: italic;
   color: #373fff;
   font-size: 16px;
 }
 
-.dashboard-design{
+.dashboard-design {
   border-style: solid;
   border-width: 3px;
   border-radius: 10px;
   border-color: #2DFFF7;
-  background-color: rgba(196,196,196,0.2);
+  background-color: rgba(196, 196, 196, 0.2);
 }
 
-.panel-title{
-  background-color: rgba(46,50,54,0.6);
+.panel-title {
+  background-color: rgba(46, 50, 54, 0.6);
   top: 0;
   left: 0;
-  width:100%;
+  width: 100%;
   position: absolute;
   border-radius: 5px 5px 0px 0px; /* top left, top right, bottom right, bottom left */
 }
 
-.panel-title-text{
-  font-family: 'Orbitron', sans-serif;
-  color: rgb(223,223,223);
+.panel-title-text {
+  font-family: "Orbitron", sans-serif;
+  color: rgb(223, 223, 223);
   padding: 8px 8px 8px 16px;
   font-size: 18px;
-  text-shadow: 0 0 3px rgba(255,0,0,0.5);
+  text-shadow: 0 0 3px rgba(255, 0, 0, 0.5);
   line-height: 1.2;
 }
 
-.uk-grid{
+.uk-grid {
   margin-top: 40px;
 }
 
-
 .gallery ul {
-  overflow:hidden;
+  overflow: hidden;
 }
 
 .gallery ul li {
-  
-  display:inline-block;
+  display: inline-block;
   width: 250px;
   height: 300px;
   margin: 10px;
   backgroud-color: blue;
-  
 }
 
 .gallery ul li img {
-  
-  height:200px;
+  height: 200px;
   width: 250px;
-  
 }
 
-.spacesuits{
+.spacesuits {
   margin-top: 30px;
-  
 }
 
-.spacesuits h1{
-  font-family: 'Orbitron', sans-serif;
+.spacesuits h1 {
+  font-family: "Orbitron", sans-serif;
   color: white;
   font-size: 12px;
 }
 
-.spacesuits .spacesuits-img{
+.spacesuits .spacesuits-img {
   width: 150px;
-  
 }
 .spacesuits #spacesuits-flters {
-
-  list-style: none;
   text-align: center;
   border-radius: 50px;
 }
@@ -157,68 +233,69 @@ h3 {
   border-radius: 50px;
 }
 
-.spacesuits #spacesuits-flters li:hover, .spacesuits #spacesuits-flters li.filter-active {
+.spacesuits #spacesuits-flters li:hover,
+.spacesuits #spacesuits-flters li.filter-active {
   color: #373fff;
 }
 
-
-#paragraph{
+#paragraph {
   margin-top: 30px;
 }
 
-#mars-rn{
+#mars-rn {
   margin-top: 60px;
 }
 
-#weather-history-section{
-  background-color: rgba(15,15,15,0.8);
+#weather-history-section {
+  background-color: rgba(15, 15, 15, 0.8);
 }
 
-#weather-history-chart{
+#weather-history-chart {
   margin-top: 40px;
 }
 
-.chart #footer, .chart .dw-chart-footer{
-  color: rgba(15,15,15,0.8);
+.chart #footer,
+.chart .dw-chart-footer {
+  color: rgba(15, 15, 15, 0.8);
 }
 
-.weather-grid{
+.weather-grid {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: repeat(2,75px);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 75px);
 }
 
-#weather-data{
+#weather-data {
   margin-top: 30px;
 }
 
-.weather-data-element{
+.weather-data-element {
   font-size: 16px;
   display: inline-block;
   /*            padding: 16px;*/
   margin: 8px;
 }
 
-#site-footer{
+#site-footer {
   margin-top: 50px;
   width: 100%;
   height: 30px;
   margin-bottom: 60px;
 }
 
-#footer-title{
+#footer-title {
   margin: 0 auto;
   width: 500px;
   text-align: center;
   margin-bottom: 8px;
 }
 
-#footer-grid{
+#footer-grid {
   margin: 0 auto;
   width: 500px;
   display: grid;
-  grid-template-columns: repeat(5,auto);
-  grid-template-rows: repeat(2,auto);
+  grid-template-columns: repeat(5, auto);
+  grid-template-rows: repeat(2, auto);
 }
 
 .adfy-member {
@@ -230,51 +307,51 @@ h3 {
   margin: 0 auto;
 }
 
-.adfy-member-insta img{
+.adfy-member-insta img {
   width: 100%;
 }
 
-#podcast{
+#podcast {
   margin-top: 30px;
 }
 
-#bg-planet-1{
+#bg-planet-1 {
   position: fixed;
 }
 
-.space{
-  padding-top:10px;
-  padding-left:10px;
-/*   width:300px;
+.space {
+  padding-top: 10px;
+  padding-left: 10px;
+  /*   width:300px;
   height:200px; */
 }
 
 .planet {
   margin: 0 auto;
-	width:120px;
-	height:120px;
-	border-radius:120px;
-	transform: rotate(20deg);
-	-webkit-transform: rotate(20deg);
-	animation: rotate 25s infinite linear;
-	-webkit-animation: rotate 25s infinite linear;
-	-moz-animation: rotate 25s infinite linear;
+  width: 120px;
+  height: 120px;
+  border-radius: 120px;
+  transform: rotate(20deg);
+  -webkit-transform: rotate(20deg);
+  animation: rotate 25s infinite linear;
+  -webkit-animation: rotate 25s infinite linear;
+  -moz-animation: rotate 25s infinite linear;
   -o-animation: rotate 25s infinite linear;
-	padding-top:4px;
-}
-				
-.yours{
-  background: url(https://3.bp.blogspot.com/_9DvzmslTIME/TQrUKY5hQ_I/AAAAAAAAAjA/5esqGHQ-PBk/s400/planet_Muunilinst1200.png);
-  box-shadow:inset 8px 8px 10px rgba(255,255,255,0.7),
-  inset -19px -19px 70px rgba(0,0,0,0.9),
-  inset -5px -5px 8px rgba(0,0,0,0.7),
-  -5px -5px 10px 1px rgba(255,255,255,0.5),
-  5px 5px 30px 1px rgba(255,80,80,0.5);
+  padding-top: 4px;
 }
 
-.left{
-  float:left;
-  width:400px;
+.yours {
+  background: url(https://3bp.blogspot.com/_9DvzmslTIME/TQrUKY5hQ_I/AAAAAAAAAjA/5esqGHQ-PBk/s400/planet_Muunilinst1200.png);
+  box-shadow: inset 8px 8px 10px rgba(255, 255, 255, 0.7),
+    inset -19px -19px 70px rgba(0, 0, 0, 0.9),
+    inset -5px -5px 8px rgba(0, 0, 0, 0.7),
+    -5px -5px 10px 1px rgba(255, 255, 255, 0.5),
+    5px 5px 30px 1px rgba(255, 80, 80, 0.5);
+}
+
+.left {
+  float: left;
+  width: 400px;
 }
 
 /* #bg-clouds{
@@ -282,95 +359,153 @@ h3 {
 } */
 
 @keyframes rotate {
-  from {background-position:0 0;}
-  to {background-position:400px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 400px 0;
+  }
 }
 
 @-webkit-keyframes rotate {
-  from {background-position:0 0;}
-  to {background-position:400px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 400px 0;
+  }
 }
 
 @-moz-keyframes rotate {
-  from {background-position:0 0;}
-  to {background-position:400px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 400px 0;
+  }
 }
 
 @-o-keyframes rotate {
-  from {background-position:0 0;}
-  to {background-position:400px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 400px 0;
+  }
 }
-
 
 @keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
 }
 @-webkit-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
 }
 @-moz-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
 }
 @-ms-keyframes move-twink-back {
-    from {background-position:0 0;}
-    to {background-position:-10000px 5000px;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -10000px 5000px;
+  }
 }
 
 @keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
 @-webkit-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
 @-moz-keyframes move-clouds-back {
-    from {background-position:0 0;}
-    to {background-position:10000px 0;}
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
 @-ms-keyframes move-clouds-back {
-    from {background-position: 0;}
-    to {background-position:10000px 0;}
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 10000px 0;
+  }
 }
 
-.stars, .twinkling, .clouds {
+.stars,
+.twinkling,
+.clouds {
   position: fixed;
-  top:0;
-  left:0;
-  right:0;
-  bottom:0;
-  width:100%;
-  height:100%;
-  display:block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
   z-index: -3;
 }
 
 .stars {
-  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
-/*   z-index:0; */
+  background: #000
+    url(
+        http://www.script-tutorials.com/demos/360/images/stars.png
+      )repeattopcenter;
+  /*   z-index:0; */
 }
 
-.twinkling{
-  background:transparent url(http://www.script-tutorials.com/demos/360/images/twinkling.png) repeat top center;
-/*   z-index:1;
+.twinkling {
+  background: transparent
+    url(
+        http://www.script-tutorials.com/demos/360/images/twinkling.png
+      )repeattopcenter;
+  /*   z-index:1;
  */
-  -moz-animation:move-twink-back 200s linear infinite;
-  -ms-animation:move-twink-back 200s linear infinite;
-  -o-animation:move-twink-back 200s linear infinite;
-  -webkit-animation:move-twink-back 200s linear infinite;
-  animation:move-twink-back 200s linear infinite;
+  -moz-animation: move-twink-back 200s linear infinite;
+  -ms-animation: move-twink-back 200s linear infinite;
+  -o-animation: move-twink-back 200s linear infinite;
+  -webkit-animation: move-twink-back 200s linear infinite;
+  animation: move-twink-back 200s linear infinite;
 }
 
-.clouds{
-    background:transparent url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
-/*     z-index:3; */
+.clouds {
+  background: transparent
+    url(
+        http://www.script-tutorials.com/demos/360/images/clouds3.png
+      )repeattopcenter;
+  /*     z-index:3; */
 
-  -moz-animation:move-clouds-back 200s linear infinite;
-  -ms-animation:move-clouds-back 200s linear infinite;
-  -o-animation:move-clouds-back 200s linear infinite;
-  -webkit-animation:move-clouds-back 200s linear infinite;
-  animation:move-clouds-back 200s linear infinite;
+  -moz-animation: move-clouds-back 200s linear infinite;
+  -ms-animation: move-clouds-back 200s linear infinite;
+  -o-animation: move-clouds-back 200s linear infinite;
+  -webkit-animation: move-clouds-back 200s linear infinite;
+  animation: move-clouds-back 200s linear infinite;
 }
