@@ -217,12 +217,8 @@ h3 {
 .spacesuits .spacesuits-img {
   width: 150px;
 }
-.spacesuits #spacesuits-flters {
-  text-align: center;
-  border-radius: 50px;
-}
 
-.spacesuits #spacesuits-flters li {
+.spacesuits #spacesuits-title li {
   cursor: pointer;
   display: inline-block;
   font-size: 16px;
@@ -233,8 +229,8 @@ h3 {
   border-radius: 50px;
 }
 
-.spacesuits #spacesuits-flters li:hover,
-.spacesuits #spacesuits-flters li.filter-active {
+.spacesuits #spacesuits-title li:hover,
+.spacesuits #spacesuits-title li.filter-active {
   color: #373fff;
 }
 
