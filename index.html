@@ -38,6 +38,8 @@
     
     <!--   jquery   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
     <!--   uikit   -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
@@ -194,11 +196,11 @@
             
           <div class="spacesuits">
           <div class="uk-margin-medium-top">
-              <nav class="uk-navbar-container" uk-navbar>
-                
+              
+            <nav class="uk-navbar-container" uk-navbar>
                 <div class="uk-navbar-center">
-                <li  class="uk-active"><a href="#1" uk-toggle="tab" type="tab">1</a></li>
-                <li><a href="#2" uk-toggle="tab" type="tab">2</a></li>
+                <li  class="uk-active"><a href="#1" data-uk-toggle="tab" type="tab">1</a></li>
+                <li><a href="#2" data-uk-toggle="tab" type="tab">2</a></li>
                 <li><a href="#Tips" uk-toggle="tab" type="tab">Tips</a></li>
             </div>
             </nav>
@@ -210,6 +212,14 @@
                 <p style="text-align:center">Space suit 1</p>
                 <img src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2FAstronauts_HP2.png?v=1612019127125" class="spacesuits-img" alt="Spacesuits1">
                 <img src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2FAstronauts_HP1.png?v=1612019120388" class="spacesuits-img" alt="Spacesuits">
+                </div>
+              </div>
+              
+              <div class="tab-pane" id="2">
+                <div class="row" data-uk-aos="fade-up" data-uk-aos-delay="100">
+                <h1>If the pressure over 700 pascal, you need to wear:</h1>
+                <p style="text-align:center">Space suit 2</p>
+                
                 </div>
               </div>
             
