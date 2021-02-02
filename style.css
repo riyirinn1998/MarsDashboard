@@ -187,6 +187,28 @@ h3 {
   margin-top: 40px;
 }
 
+.gallery{
+/*     margin: 0 auto;
+  width: 500px; */
+/*   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr); */
+  display: inline-block;
+}
+
+/* .rover-image-element{
+  padding: 8px;
+/*   display: inline-block; */
+  width: 25%;
+}
+
+.rover-image-image-element img{
+  width: 100%;
+  height: 100%;
+}
+ */
+
+
 /* .gallery ul {
   overflow: hidden;
 }
