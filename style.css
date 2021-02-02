@@ -187,7 +187,7 @@ h3 {
   margin-top: 40px;
 }
 
-.gallery ul {
+/* .gallery ul {
   overflow: hidden;
 }
 
@@ -202,7 +202,7 @@ h3 {
 .gallery ul li img {
   height: 200px;
   width: 250px;
-}
+} */
 
 .spacesuits {
   margin-top: 30px;
@@ -504,4 +504,12 @@ h3 {
   -o-animation: move-clouds-back 200s linear infinite;
   -webkit-animation: move-clouds-back 200s linear infinite;
   animation: move-clouds-back 200s linear infinite;
+}
+
+#first-rover-image{
+  margin-top: 50px;
+}
+
+.rover-info-section{
+  margin-top: 16px;
 }
