@@ -334,6 +334,7 @@ h3 {
 }
 
 #bg-planet-1 {
+  bottom: 50px;
   position: fixed;
 }
 
@@ -578,6 +579,14 @@ h3 {
   .gallery ul li img {
       height: 100%;
       width: 100%;
+  }
+  
+  html {
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
   }
   
 }
