@@ -273,6 +273,10 @@
                           <div id="rover4"></div>
                           <div class="rover-info-section" id="rover-info4"></div>
                         </li>
+                      <li>
+                          <div id="rover5"></div>
+                          <div class="rover-info-section" id="rover-info5"></div>
+                        </li>
                     </ul>
                 </div>
             </div>  
@@ -374,8 +378,12 @@
         <div class="clouds"></div>
       </div>
 
+        
+        
+        
     <script src="weather-on-mars.js"></script>
-    
+        
+        
 <script>
   
 const API_KEY = 'c5dPEdEiY4toYIxZa7Zeaog1MFJl4pVCkOCb0CVs'
@@ -528,10 +536,10 @@ function isMetric() {
         function processResult(data) {
           console.log(data);
           
-          $('#rover1').append('<img src="' + data['photos'][1]['img_src'] + '" alt="Mars Rover Image1">' )
-          $('#rover-info1').append('<p>Earth Date: ' + data['photos'][1]['earth_date'] + '</p>')
-          $('#rover-info1').append('<p>Camera Name: ' + data['photos'][1]['camera']['full_name'] +'</p>')
-          $('#rover-info1').append('<p>Rover Name: ' + data['photos'][1]['rover']['name'] +'</p>')
+          $('#rover1').append('<img src="' + data['photos'][777]['img_src'] + '" alt="Mars Rover Image1">' )
+          $('#rover-info1').append('<p>Earth Date: ' + data['photos'][777]['earth_date'] + '</p>')
+          $('#rover-info1').append('<p>Camera Name: ' + data['photos'][777]['camera']['full_name'] +'</p>')
+          $('#rover-info1').append('<p>Rover Name: ' + data['photos'][777]['rover']['name'] +'</p>')
           
           $('#rover2').append('<img src="' + data['photos'][130]['img_src'] + '" alt="Mars Rover Image2">' )
           $('#rover-info2').append('<p>Earth Date: ' + data['photos'][130]['earth_date'] + '</p>')
@@ -547,6 +555,11 @@ function isMetric() {
           $('#rover-info4').append('<p>Earth Date: ' + data['photos'][555]['earth_date'] + '</p>')
           $('#rover-info4').append('<p>Camera Name: ' + data['photos'][555]['camera']['full_name'] +'</p>')
           $('#rover-info4').append('<p>Rover Name: ' + data['photos'][555]['rover']['name'] +'</p>')
+          
+          $('#rover5').append('<img src="' + data['photos'][666]['img_src'] + '" alt="Mars Rover Image5">' )
+          $('#rover-info5').append('<p>Earth Date: ' + data['photos'][666]['earth_date'] + '</p>')
+          $('#rover-info5').append('<p>Camera Name: ' + data['photos'][666]['camera']['full_name'] +'</p>')
+          $('#rover-info5').append('<p>Rover Name: ' + data['photos'][666]['rover']['name'] +'</p>')
           
           
           }
