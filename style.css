@@ -209,7 +209,7 @@ h3 {
  */
 
 
-/* .gallery ul {
+.gallery ul {
   overflow: hidden;
 }
 
@@ -224,7 +224,7 @@ h3 {
 .gallery ul li img {
   height: 200px;
   width: 250px;
-} */
+}
 
 .spacesuits {
   margin-top: 30px;
@@ -534,4 +534,13 @@ h3 {
 
 .rover-info-section{
   margin-top: 16px;
+}
+
+
+@media (max-width: 600px){
+  
+  #footer-grid {
+    width: 100%;
+  }
+  
 }
