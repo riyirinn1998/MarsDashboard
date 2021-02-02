@@ -280,7 +280,7 @@ h3 {
 .weather-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 75px);
+  grid-template-rows: repeat(2, 100px);
 }
 
 #weather-data {
@@ -553,6 +553,31 @@ h3 {
     width: 100%;
     text-align: center;
     margin-bottom: 8px;
+  }
+  
+  
+  h1 {
+    font-family: "Orbitron", sans-serif;
+    font-style: italic;
+    color: #373fff;
+    font-size: 36px;
+    line-height: 1.2;
+    padding: 8px 8px 8px 16px;
+  }
+  
+  #mars-rn {
+    margin-top: 85px;
+  }
+  
+  .uk-container {
+    box-sizing: border-box;
+    max-width: 980px;
+    padding: 0 0px;
+  }
+  
+  .gallery ul li img {
+      height: 100%;
+      width: 100%;
   }
   
 }
