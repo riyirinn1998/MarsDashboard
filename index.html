@@ -42,15 +42,22 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
+    
+    
     <!--   uikit   -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
   
+    
     <!-- Orbitron font from google  -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
     
+    
+    <!--   CSS   -->
     <link rel="stylesheet" href="/style.css" />
+    
+    
   </head>
   
   <body>
@@ -67,7 +74,6 @@
     
     <!-- UI Kit Code -->
     <div class="uk-container uk-container-center uk-margin-top">
-    <ul class="uk-grid" data-uk-grid-margin>
       
       <!--   row1 col1-2  title & text  -->
      <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-2-3">
@@ -295,11 +301,11 @@
               <h2 class="panel-title-text">Weather History</h2>
             </div>
             <div id="weather-history-chart">
-            <iframe title="Martian Weather Data for the last 500 Sols" aria-label="Interactive line chart" id="datawrapper-chart-W6i09" src="https://datawrapper.dwcdn.net/W6i09/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
-            </script>
+            <iframe title="Martian Weather Data for the last 500 Sols" aria-label="Interactive line chart" id="datawrapper-chart-W6i09" src="https://datawrapper.dwcdn.net/W6i09/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
+              <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();</script>
             </div>
           </div>
-       
+      </li>
       
 
     <div id="site-footer">
@@ -380,11 +386,11 @@
         <div class="clouds"></div>
       </div>
 
-        
+       
         
         
     <script src="weather-on-mars.js"></script>
-        
+    <script src="Rover-image.js"></script>
 
 <!-- weather API -->
         
@@ -527,53 +533,8 @@
     </script>
     
 
-    
-    
-<!--   Rover image API   -->
-   
-    <script>
 
-        var endpoint = 'https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=1000&api_key=';
-        var api_key = 'F9t29gnyj1ihsdObA7VYKNRFynfJtcsCh6Ud8frp';
-      // Yilin's api key = 'F9t29gnyj1ihsdObA7VYKNRFynfJtcsCh6Ud8frp'
-        var url = endpoint + api_key ;
-        console.log('Fetching weather data from -' + url);
 
-        $.getJSON(url, processResult);
-
-        function processResult(data) {
-          console.log(data);
-          
-          $('#rover1').append('<img src="' + data['photos'][777]['img_src'] + '" alt="Mars Rover Image1">' )
-          $('#rover-info1').append('<p>Earth Date: ' + data['photos'][777]['earth_date'] + '</p>')
-          $('#rover-info1').append('<p>Camera Name: ' + data['photos'][777]['camera']['full_name'] +'</p>')
-          $('#rover-info1').append('<p>Rover Name: ' + data['photos'][777]['rover']['name'] +'</p>')
-          
-          $('#rover2').append('<img src="' + data['photos'][130]['img_src'] + '" alt="Mars Rover Image2">' )
-          $('#rover-info2').append('<p>Earth Date: ' + data['photos'][130]['earth_date'] + '</p>')
-          $('#rover-info2').append('<p>Camera Name: ' + data['photos'][130]['camera']['full_name'] +'</p>')
-          $('#rover-info2').append('<p>Rover Name: ' + data['photos'][130]['rover']['name'] +'</p>')
-          
-          $('#rover3').append('<img src="' + data['photos'][333]['img_src'] + '" alt="Mars Rover Image3">' )
-          $('#rover-info3').append('<p>Earth Date: ' + data['photos'][333]['earth_date'] + '</p>')
-          $('#rover-info3').append('<p>Camera Name: ' + data['photos'][333]['camera']['full_name'] +'</p>')
-          $('#rover-info3').append('<p>Rover Name: ' + data['photos'][333]['rover']['name'] +'</p>')
-          
-          $('#rover4').append('<img src="' + data['photos'][555]['img_src'] + '" alt="Mars Rover Image4">' )
-          $('#rover-info4').append('<p>Earth Date: ' + data['photos'][555]['earth_date'] + '</p>')
-          $('#rover-info4').append('<p>Camera Name: ' + data['photos'][555]['camera']['full_name'] +'</p>')
-          $('#rover-info4').append('<p>Rover Name: ' + data['photos'][555]['rover']['name'] +'</p>')
-          
-          $('#rover5').append('<img src="' + data['photos'][666]['img_src'] + '" alt="Mars Rover Image5">' )
-          $('#rover-info5').append('<p>Earth Date: ' + data['photos'][666]['earth_date'] + '</p>')
-          $('#rover-info5').append('<p>Camera Name: ' + data['photos'][666]['camera']['full_name'] +'</p>')
-          $('#rover-info5').append('<p>Rover Name: ' + data['photos'][666]['rover']['name'] +'</p>')
-          
-          
-          }
-<!--  end of Rover image API   -->
-
-    </script>
     
 </body>
 </html>
