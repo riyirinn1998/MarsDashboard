@@ -4,103 +4,134 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
+
     <title>Mars Weather Dashboard</title>
-    
-<!--    SEO  -->
-    <meta name="description" content="What’s the weather like on Mars right now? Our dashboard visualises data from NASA web APIs."/>
-    <meta name="keywords" content="mars, weather, dashboard, data, visualisation, nasa, api"/>
-    <meta name="author" content="Group ADFY – Interactive Data Vis @ Goldsmiths University"/>
 
-    <meta property="og:title" content="Mars Weather Dashboard ">
-    <meta property="og:type" content="website">
-    <meta property="og:description" content="">
-    <meta property="og:site_name" content="Mars Weather Dashboard ">
-    <meta property="og:locale" content="en_GB">
-    <meta property="article:author" content="">
-    <meta property="article:section" content="Home">
-    <meta property="og:url" content="">
-    <meta property="og:image" content=""/>
+    <!--    SEO  -->
+    <meta
+      name="description"
+      content="What’s the weather like on Mars right now? Our dashboard visualises data from NASA web APIs."
+    />
+    <meta
+      name="keywords"
+      content="mars, weather, dashboard, data, visualisation, nasa, api"
+    />
+    <meta
+      name="author"
+      content="Group ADFY – Interactive Data Vis @ Goldsmiths University"
+    />
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="">
-    <meta name="twitter:title" content="Mars Weather Dashboard ">
-    <meta name="twitter:description" content="What’s the weather like on Mars right now? Our dashboard visualises data from NASA web APIs.">
-    <meta name="twitter:creator" content="Group ADFY – Interactive Data Vis @ Goldsmiths University">
-    <meta name="twitter:image:src" content="">
-    <meta name="twitter:image:alt" content="Group ADFY – Interactive Data Vis @ Goldsmiths University">
-    <meta name="twitter:domain" content="">
+    <meta property="og:title" content="Mars Weather Dashboard " />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="" />
+    <meta property="og:site_name" content="Mars Weather Dashboard " />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="article:author" content="" />
+    <meta property="article:section" content="Home" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
 
-    
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="Mars Weather Dashboard " />
+    <meta
+      name="twitter:description"
+      content="What’s the weather like on Mars right now? Our dashboard visualises data from NASA web APIs."
+    />
+    <meta
+      name="twitter:creator"
+      content="Group ADFY – Interactive Data Vis @ Goldsmiths University"
+    />
+    <meta name="twitter:image:src" content="" />
+    <meta
+      name="twitter:image:alt"
+      content="Group ADFY – Interactive Data Vis @ Goldsmiths University"
+    />
+    <meta name="twitter:domain" content="" />
+
     <link rel="stylesheet" href="/style.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Fmars.png?v=1612011260000">
-    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Fmars.png?v=1612011260000">
-    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Fmars.png?v=1612011260000">
-    
-    
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Fmars.png?v=1612011260000"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Fmars.png?v=1612011260000"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Fmars.png?v=1612011260000"
+    />
+
     <!--   jquery   -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="js/uikit.min.js"></script>
     <script src="js/uikit-icons.min.js"></script>
-    
-    
+
     <!--   uikit   -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/css/uikit.min.css"
+    />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.5/js/uikit.min.js"></script>
-  
-    
+
     <!-- Orbitron font from google  -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
-    
-    
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
     <!--   CSS   -->
     <link rel="stylesheet" href="/style.css" />
-    
-    
   </head>
-  
-  <body>
-    
 
-    
+  <body>
     <div id="bg-planet-1">
       <div class="left">
         <div class="space">
-        <div class="planet yours"></div>
+          <div class="planet yours"></div>
         </div>
       </div>
     </div>
-    
-    <!-- UI Kit Code -->
+
+<!-- UI Kit Code -->
     <div class="uk-container uk-container-center uk-margin-top">
       
-      <!--   row1 col1-2  title & text  -->
-     <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-2-3">
+  <!--   row1 col1-2  title & text  -->
+      <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-2-3">
         <div class="uk-panel uk-panel-box dashboard-design">
           <div class="panel-title">
             <h1>Mars Right Now</h1>
           </div>
-          
+
           <p id="mars-rn">
-            You are one of the first settlers in the Mars colony, which has not yet been terraformed. 
-            You need to do structural repairs outside of the base which has a sealed atmosphere, so need support from NASA to give you a dashboard on the weather outside of the base. 
-            You need to know things like wind direction and temperature as this can affect which space suit you need to wear or what gear you need to take with you.
+            You are one of the first settlers in the Mars colony, which has not
+            yet been terraformed. You need to do structural repairs outside of
+            the base which has a sealed atmosphere, so need support from NASA to
+            give you a dashboard on the weather outside of the base. You need to
+            know things like wind direction and temperature as this can affect
+            which space suit you need to wear or what gear you need to take with
+            you.
           </p>
-          
         </div>
       </li>
-      
-      <!--   row1 col3  illustration  -->
+
+  <!--   row1 col3  illustration  -->
       <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-3">
-          <div class="left">
-            <div class="space">
+        <div class="left">
+          <div class="space">
             <div class="planet yours"></div>
-            </div>
           </div>
+        </div>
       </li>
-      
-      <!--   row2 col1-2  Map   -->
+
+  <!--   row2 col1-2  Map   -->
       <!--    mars map is a page  https://api.nasa.gov/mars-wmts/catalog/HRSC_Martian_east.html    -->
       <!--    Google Mars Map https://www.google.com/mars/#map=visible    -->
       <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-2-3">
@@ -108,45 +139,55 @@
           <div class="panel-title">
             <h2 class="panel-title-text">Mars Map</h2>
           </div>
-          <div style="width:100%;height:300px;overflow:hidden;border:0px;margin-top:40px;">
+          <div
+            style="width:100%;height:300px;overflow:hidden;border:0px;margin-top:40px;"
+          >
             <div style="width:100%;height:400px;margin:-153px 0px 0px -10px;">
-              <iframe width="720" height="450" scrolling="no" src="https://www.google.com/mars/#lat=-4.740675&lon=-104.414062&zoom=2&map=visible">
-            
-            </iframe>
+              <iframe
+                width="720"
+                height="450"
+                scrolling="no"
+                src="https://www.google.com/mars/#lat=-4.740675&lon=-104.414062&zoom=2&map=visible"
+              >
+              </iframe>
             </div>
-            
           </div>
-          
-          
         </div>
       </li>
-      
+
       <!--   row2 col3  podcast  -->
       <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-3">
         <div class="uk-panel uk-panel-box dashboard-design">
           <div class="panel-title">
             <h2 class="panel-title-text">Podcast</h2>
           </div>
-          
-          <iframe id="podcast" src="https://open.spotify.com/embed-podcast/episode/6qbxf7cGJxyBe5VKVqiVRZ" width="100%" height="232" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-          
+
+          <iframe
+            id="podcast"
+            src="https://open.spotify.com/embed-podcast/episode/6qbxf7cGJxyBe5VKVqiVRZ"
+            width="100%"
+            height="232"
+            frameborder="0"
+            allowtransparency="true"
+            allow="encrypted-media"
+          ></iframe>
         </div>
       </li>
-      
-     <!--   row3 col1-2  Weather   -->
+
+      <!--   row3 col1-2  Weather   -->
       <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-2-3">
         <div class="uk-panel uk-panel-box dashboard-design">
           <div class="panel-title">
             <h2 class="panel-title-text">Weather</h2>
           </div>
-          
+
           <div id="weather-data"></div>
-          
-            <!--     weather details       -->
-<!--           <ul class="uk-grid" data-uk-grid-margin> -->
-             
-              <!--   Temperature        -->
-<!--              <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-1">
+
+          <!--     weather details       -->
+          <!--           <ul class="uk-grid" data-uk-grid-margin> -->
+
+          <!--   Temperature        -->
+          <!--              <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-1">
                <h3>Temperature</h3>
               <p class="reading">
                 High:
@@ -159,14 +200,14 @@
                 °<span data-temp-unit></span>
               </p>
              </li> -->
-             
-             <!--   Atmospheric pressure     -->
-<!--              <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-2">
+
+          <!--   Atmospheric pressure     -->
+          <!--              <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-2">
                <h3>Atmospheric pressure </h3>
              </li> -->
-             
-             <!--     Wind direction and speed     -->
-<!--              <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-2">
+
+          <!--     Wind direction and speed     -->
+          <!--              <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-2">
               <h3>Atmospheric pressure </h3>
                 <p class="reading">
                 <span data-wind-speed></span>
@@ -174,367 +215,433 @@
                 <p class="sr-only" data-wind-direction-text></p>
               </p>
              </li> -->
-        
-             
-             
-             <!--     Atmospheric Opacity     -->
-<!--              <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-1">
+
+          <!--     Atmospheric Opacity     -->
+          <!--              <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-1">
                <h3>Atmospheric Opacity</h3>
                <div class="unit">
                <label for="cel">°C</label>
                <input type="radio" id="cel" name="unit" checked> -->
-               <!-- when unit__toggle is clicked
+          <!-- when unit__toggle is clicked
                     checkbox needs to change -->
-<!--                <button class="unit__toggle" data-unit-toggle></button>
+          <!--                <button class="unit__toggle" data-unit-toggle></button>
                <label for="fah">°F</label>
                <input type="radio" id="fah" name="unit">
              </div>
              </li>
            </ul> -->
-
         </div>
       </li>
       <!--   end of weather     -->
-      
+
       <!--   row3 col3 Spacesuits -->
       <li class="uk-width-small-1-1 uk-width-medium-1-2 uk-width-large-1-3">
         <div class="uk-panel uk-panel-box dashboard-design">
           <div class="panel-title">
             <h2 class="panel-title-text">Spacesuits Recommendations</h2>
-          </div> 
-            
+          </div>
+
           <div class="spacesuits">
-          <div class="uk-margin-medium-top">
-              
-            <nav class="uk-navbar-container" uk-navbar>
+            <div class="uk-margin-medium-top">
+              <nav class="uk-navbar-container" uk-navbar>
                 <div class="uk-navbar-center">
                   <ul class="uk-subnav uk-subnav-pill" uk-switcher>
-                <li><a href="#1" data-uk-toggle="tab" uk-switcher-item="1" type="tab">1</a></li>
-                <li><a href="#2" data-uk-toggle="tab" uk-switcher-item="2" type="tab">2</a></li>
-                <li><a href="#Tips" uk-toggle="tab" type="tab">Tips</a></li>
+                    <li>
+                      <a
+                        href="#1"
+                        data-uk-toggle="tab"
+                        uk-switcher-item="1"
+                        type="tab"
+                        >1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        href="#2"
+                        data-uk-toggle="tab"
+                        uk-switcher-item="2"
+                        type="tab"
+                        >2</a
+                      >
+                    </li>
+                    <li><a href="#Tips" uk-toggle="tab" type="tab">Tips</a></li>
                   </ul>
-                  </div>
-            </nav>
+                </div>
+              </nav>
 
-            <ul class="tab-content">
-              <div class="tab-pane" id="1">
-                <div class="row">
-                <h1>If the pressure is over 700 pascal, you need to wear:</h1>
-                <p style="text-align:center">Spacesuit 1</p>
-                <img src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2FAstronauts_HP2.png?v=1612019127125" class="spacesuits-img" alt="Spacesuits1">
-                <img src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2FAstronauts_HP1.png?v=1612019120388" class="spacesuits-img" alt="Spacesuits">
+              <ul class="tab-content">
+                <div class="tab-pane" id="1">
+                  <div class="row">
+                    <h1>
+                      If the pressure is over 700 pascal, you need to wear:
+                    </h1>
+                    <p style="text-align:center">Spacesuit 1</p>
+                    <img
+                      src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2FAstronauts_HP2.png?v=1612019127125"
+                      class="spacesuits-img"
+                      alt="Spacesuits1"
+                    />
+                    <img
+                      src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2FAstronauts_HP1.png?v=1612019120388"
+                      class="spacesuits-img"
+                      alt="Spacesuits"
+                    />
+                  </div>
                 </div>
-              </div>
-              
-              <div class="tab-pane" id="2">
-                <div class="row" data-uk-aos="fade-up" data-uk-aos-delay="100">
-                <h1>If the pressure is below 700 pascal, you need to wear:</h1>
-                <p style="text-align:center">Space suit 2</p>
-                <img src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2F2.png?v=1612152140166" class="spacesuits-img" alt="Spacesuits3">
+
+                <div class="tab-pane" id="2">
+                  <div
+                    class="row"
+                    data-uk-aos="fade-up"
+                    data-uk-aos-delay="100"
+                  >
+                    <h1>
+                      If the pressure is below 700 pascal, you need to wear:
+                    </h1>
+                    <p style="text-align:center">Space suit 2</p>
+                    <img
+                      src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2F2.png?v=1612152140166"
+                      class="spacesuits-img"
+                      alt="Spacesuits3"
+                    />
+                  </div>
                 </div>
-              </div>
-            
-               
-            </ul>
-        </div>
+              </ul>
             </div>
           </div>
+        </div>
       </li>
-      
-      
-      <!--  row 4 Mars Rover image -->     
+
+      <!--  row 4 Mars Rover image -->
       <li class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-1">
-        <div class="uk-panel uk-panel-box dashboard-design" id="weather-history-section">
+        <div
+          class="uk-panel uk-panel-box dashboard-design"
+          id="weather-history-section"
+        >
           <div class="panel-title">
             <h2 class="panel-title-text">Curisoity Rover Cam</h2>
           </div>
-          
-          <p id="paragraph">Need a peak at the weather outside? Check the curiosity rover's navigation camera to make sure.</p>
-          
-           <!-- <img src="https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG" alt="Mars Rover Image" width="500" height="600">
+
+          <p id="paragraph">
+            Need a peak at the weather outside? Check the curiosity rover's
+            navigation camera to make sure.
+          </p>
+
+          <!-- <img src="https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG" alt="Mars Rover Image" width="500" height="600">
           <!--  This is the API I took it from, but I haven't worked out how to extract the image directly https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&api_key=EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf 
            "photos":[{"id":787389,"sol":3000,"camera":{"id":26,"name":"NAVCAM","rover_id":5,"full_name":"Navigation Camera"},"img_src":"https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG","earth_date":"2021-01-13","rover":-->
-       
+
           <!-- <img src="curiosityRoverJpeg" alt="Mars Rover Image" width="500" height="600"> -->
           <!--  This is the API I took it from, but I haven't worked out how to extract the image directly https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&api_key=EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf 
            "photos":[{"id":787389,"sol":3000,"camera":{"id":26,"name":"NAVCAM","rover_id":5,"full_name":"Navigation Camera"},"img_src":"https://mars.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/03000/opgs/edr/ncam/NLB_663825263EDR_F0850000NCAM00291M_.JPG","earth_date":"2021-01-13","rover":-->
-          
-          
+
           <!--   Lin:  I can do this part and already fixed it   :)    -->
-          
-            <div data-uk-slider>
-                <div class="uk-slider-container gallery">
-                    <ul class="uk-slider uk-grid-width-medium-1-4">
-                        <li>
-                          <div id="rover1"></div>
-                          <div class="rover-info-section" id="rover-info1"></div>
-                        </li>
-                        <li>
-                          <div id="rover2"></div>
-                          <div class="rover-info-section" id="rover-info2"></div>
-                        </li>
-                        <li>
-                          <div id="rover3"></div>
-                          <div class="rover-info-section" id="rover-info3"></div>
-                        </li>
-                        <li>
-                          <div id="rover4"></div>
-                          <div class="rover-info-section" id="rover-info4"></div>
-                        </li>
-                      <li>
-                          <div id="rover5"></div>
-                          <div class="rover-info-section" id="rover-info5"></div>
-                        </li>
-                    </ul>
-                </div>
-            </div>  
-            
-          
-          
-        </div>
-      </li>
-            
-      <!--  row 5 Weather History -->     
-      <li class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-1">
-        <div class="uk-panel uk-panel-box dashboard-design" id="weather-history-section1">
-            <div class="panel-title">
-              <h2 class="panel-title-text">Weather History</h2>
-            </div>
-            <div id="weather-history-chart">
-            <iframe title="Martian Weather Data for the last 500 Sols" aria-label="Interactive line chart" id="datawrapper-chart-W6i09" src="https://datawrapper.dwcdn.net/W6i09/3/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="400"></iframe>
-              <script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();</script>
+
+          <div data-uk-slider>
+            <div class="uk-slider-container gallery">
+              <ul class="uk-slider uk-grid-width-medium-1-4">
+                <li>
+                  <div id="rover1"></div>
+                  <div class="rover-info-section" id="rover-info1"></div>
+                </li>
+                <li>
+                  <div id="rover2"></div>
+                  <div class="rover-info-section" id="rover-info2"></div>
+                </li>
+                <li>
+                  <div id="rover3"></div>
+                  <div class="rover-info-section" id="rover-info3"></div>
+                </li>
+                <li>
+                  <div id="rover4"></div>
+                  <div class="rover-info-section" id="rover-info4"></div>
+                </li>
+                <li>
+                  <div id="rover5"></div>
+                  <div class="rover-info-section" id="rover-info5"></div>
+                </li>
+              </ul>
             </div>
           </div>
+        </div>
       </li>
-      
 
+      <!--  row 5 Weather History -->
+      <li class="uk-width-small-1-1 uk-width-medium-1-1 uk-width-large-1-1">
+        <div
+          class="uk-panel uk-panel-box dashboard-design"
+          id="weather-history-section1"
+        >
+          <div class="panel-title">
+            <h2 class="panel-title-text">Weather History</h2>
+          </div>
+          <div id="weather-history-chart">
+            <iframe
+              title="Martian Weather Data for the last 500 Sols"
+              aria-label="Interactive line chart"
+              id="datawrapper-chart-W6i09"
+              src="https://datawrapper.dwcdn.net/W6i09/3/"
+              scrolling="no"
+              frameborder="0"
+              style="width: 0; min-width: 100% !important; border: none;"
+              height="400"
+            ></iframe>
+            <script type="text/javascript">
+              !(function() {
+                "use strict";
+                window.addEventListener("message", function(a) {
+                  if (void 0 !== a.data["datawrapper-height"])
+                    for (var e in a.data["datawrapper-height"]) {
+                      var t =
+                        document.getElementById("datawrapper-chart-" + e) ||
+                        document.querySelector("iframe[src*='" + e + "']");
+                      t &&
+                        (t.style.height =
+                          a.data["datawrapper-height"][e] + "px");
+                    }
+                });
+              })();
+            </script>
+          </div>
+        </div>
+      </li>
+    </div>
+
+    <!-- end of content -->
+
+    <!-- footer -->
     <div id="site-footer">
-      
       <div id="footer-title">
         Created by:
       </div>
-    
-        <div id="footer-grid">
-        
-            <div class="adfy-member">
-                <a href="" target="_blank">
-                    Adrian Everett
-                </a>
-            </div>
-            
-            <div class="adfy-member">
-                <a href="" target="_blank">
-                Adina Grecu
-                </a>
-            </div>
-            
-            <div class="adfy-member">
-                <a href="https://snikfi.com/" target="_blank">
-                Fisnik Islami
-                </a>
-            </div>
-            
-            <div class="adfy-member">
-                <a href="" target="_blank">
-                Dan Lu
-                </a>
-            </div>
-            
-            <div class="adfy-member">
-                <a href="" target="_blank">
-                Yilin Li
-                </a>
-            </div>
-          
-            <div class="adfy-member-insta">
-                <a href="" target="_blank">
-                    <img src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Finstagram-icon.png?v=1612014765286"/>
-                </a>
-            </div>
-            
-            <div class="adfy-member-insta">
-                <a href="" target="_blank">
-                    <img src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Finstagram-icon.png?v=1612014765286"/>
-                </a>
-            </div>
-            
-            <div class="adfy-member-insta">
-                <a href="https://www.instagram.com/snikfi.design/" target="_blank">
-                    <img src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Finstagram-icon.png?v=1612014765286"/>
-                </a>
-            </div>
-            
-            <div class="adfy-member-insta">
-                <a href="" target="_blank">
-                    <img src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Finstagram-icon.png?v=1612014765286"/>
-                </a>
-            </div>
-            
-            <div class="adfy-member-insta">
-                <a href="https://www.instagram.com/riyirinn/" target="_blank">
-                    <img src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Finstagram-icon.png?v=1612014765286"/>
-                </a>
-            </div>
-        
-        </div>
-    
-    </div>
-        
-      <div id="bg-clouds">
-        <div class="stars"></div>
-        <div class="twinkling"></div>
-        <div class="clouds"></div>
-      </div>
 
-       
-        
-        
+      <div id="footer-grid">
+        <div class="adfy-member">
+          <a href="" target="_blank">
+            Adrian Everett
+          </a>
+        </div>
+
+        <div class="adfy-member">
+          <a href="" target="_blank">
+            Adina Grecu
+          </a>
+        </div>
+
+        <div class="adfy-member">
+          <a href="https://snikfi.com/" target="_blank">
+            Fisnik Islami
+          </a>
+        </div>
+
+        <div class="adfy-member">
+          <a href="" target="_blank">
+            Dan Lu
+          </a>
+        </div>
+
+        <div class="adfy-member">
+          <a href="" target="_blank">
+            Yilin Li
+          </a>
+        </div>
+
+        <div class="adfy-member-insta">
+          <a href="" target="_blank">
+            <img
+              src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Finstagram-icon.png?v=1612014765286"
+            />
+          </a>
+        </div>
+
+        <div class="adfy-member-insta">
+          <a href="" target="_blank">
+            <img
+              src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Finstagram-icon.png?v=1612014765286"
+            />
+          </a>
+        </div>
+
+        <div class="adfy-member-insta">
+          <a href="https://www.instagram.com/snikfi.design/" target="_blank">
+            <img
+              src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Finstagram-icon.png?v=1612014765286"
+            />
+          </a>
+        </div>
+
+        <div class="adfy-member-insta">
+          <a href="" target="_blank">
+            <img
+              src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Finstagram-icon.png?v=1612014765286"
+            />
+          </a>
+        </div>
+
+        <div class="adfy-member-insta">
+          <a href="https://www.instagram.com/riyirinn/" target="_blank">
+            <img
+              src="https://cdn.glitch.com/9fcf5516-6fc4-4e90-9ec2-08a7caccb5b2%2Finstagram-icon.png?v=1612014765286"
+            />
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- end of footer -->
+
+    <!-- background -->
+    <div id="bg-clouds">
+      <div class="stars"></div>
+      <div class="twinkling"></div>
+      <div class="clouds"></div>
+    </div>
+    <!-- end of background -->
+
     <script src="weather-on-mars.js"></script>
     <script src="Rover-image.js"></script>
 
-<!-- weather API -->
-        
-  <script>
+    <!-- weather API -->
 
-  const API_KEY = 'c5dPEdEiY4toYIxZa7Zeaog1MFJl4pVCkOCb0CVs'
-  // Fiz's api key = 'c5dPEdEiY4toYIxZa7Zeaog1MFJl4pVCkOCb0CVs'
-  // Yilin's api key = 'F9t29gnyj1ihsdObA7VYKNRFynfJtcsCh6Ud8frp'
-  const API_URL = `https://api.nasa.gov/insight_weather/?api_key=${API_KEY}&feedtype=json&ver=1.0`
-  // const API_URL = `https://api.nasa.gov/insight_weather/?api_key=c5dPEdEiY4toYIxZa7Zeaog1MFJl4pVCkOCb0CVs'&feedtype=json&ver=1.0`
+    <script>
+      const API_KEY = "c5dPEdEiY4toYIxZa7Zeaog1MFJl4pVCkOCb0CVs";
+      // Fiz's api key = 'c5dPEdEiY4toYIxZa7Zeaog1MFJl4pVCkOCb0CVs'
+      // Yilin's api key = 'F9t29gnyj1ihsdObA7VYKNRFynfJtcsCh6Ud8frp'
+      const API_URL = `https://api.nasa.gov/insight_weather/?api_key=${API_KEY}&feedtype=json&ver=1.0`;
+      // const API_URL = `https://api.nasa.gov/insight_weather/?api_key=c5dPEdEiY4toYIxZa7Zeaog1MFJl4pVCkOCb0CVs'&feedtype=json&ver=1.0`
 
-  const currentSolElement = document.querySelector('[data-current-sol]')
-  const currentDateElement = document.querySelector('[data-current-date]')
-  const currentTempHighElement = document.querySelector('[data-current-temp-high]')
-  const currentTempLowElement = document.querySelector('[data-current-temp-low]')
-  const windSpeedElement = document.querySelector('[data-wind-speed]')
-  const windDirectionText = document.querySelector('[data-wind-direction-text]')
-  const windDirectionArrow = document.querySelector('[data-wind-direction-arrow]')
+      const currentSolElement = document.querySelector("[data-current-sol]");
+      const currentDateElement = document.querySelector("[data-current-date]");
+      const currentTempHighElement = document.querySelector(
+        "[data-current-temp-high]"
+      );
+      const currentTempLowElement = document.querySelector(
+        "[data-current-temp-low]"
+      );
+      const windSpeedElement = document.querySelector("[data-wind-speed]");
+      const windDirectionText = document.querySelector(
+        "[data-wind-direction-text]"
+      );
+      const windDirectionArrow = document.querySelector(
+        "[data-wind-direction-arrow]"
+      );
 
-  const unitToggle = document.querySelector('[data-unit-toggle]')
-  const metricRadio = document.getElementById('cel')
-  const imperialRadio = document.getElementById('fah')
+      const unitToggle = document.querySelector("[data-unit-toggle]");
+      const metricRadio = document.getElementById("cel");
+      const imperialRadio = document.getElementById("fah");
 
-  let selectedSolIndex
+      let selectedSolIndex;
 
-  getWeather().then(sols => {
-    selectedSolIndex = sols.length - 1
-    displaySelectedSol(sols)
-    updateUnits()
+      getWeather().then(sols => {
+        selectedSolIndex = sols.length - 1;
+        displaySelectedSol(sols);
+        updateUnits();
 
-    unitToggle.addEventListener('click', () => {
-      let metricUnits = !isMetric()
-      metricRadio.checked = metricUnits
-      imperialRadio.checked = !metricUnits
-      displaySelectedSol(sols)
-      updateUnits()
-    })
+        unitToggle.addEventListener("click", () => {
+          let metricUnits = !isMetric();
+          metricRadio.checked = metricUnits;
+          imperialRadio.checked = !metricUnits;
+          displaySelectedSol(sols);
+          updateUnits();
+        });
 
-    metricRadio.addEventListener('change', () => {
-      displaySelectedSol(sols)
-      updateUnits()
-    })
+        metricRadio.addEventListener("change", () => {
+          displaySelectedSol(sols);
+          updateUnits();
+        });
 
-    imperialRadio.addEventListener('change', () => {
-      displaySelectedSol(sols)
-      updateUnits()
-    })
-  })
+        imperialRadio.addEventListener("change", () => {
+          displaySelectedSol(sols);
+          updateUnits();
+        });
+      });
 
-  function displaySelectedSol(sols) {
-    const selectedSol = sols[selectedSolIndex]
-    currentSolElement.innerText = selectedSol.sol
-    currentDateElement.innerText = displayDate(selectedSol.date)
-    currentTempHighElement.innerText = displayTemperature(selectedSol.maxTemp)
-    currentTempLowElement.innerText = displayTemperature(selectedSol.minTemp)
-    windSpeedElement.innerText = displaySpeed(selectedSol.windSpeed)
-    windDirectionArrow.style.setProperty('--direction', `${selectedSol.windDirectionDegrees}deg`)
-    windDirectionText.innerText = selectedSol.windDirectionCardinal
-  }
+      function displaySelectedSol(sols) {
+        const selectedSol = sols[selectedSolIndex];
+        currentSolElement.innerText = selectedSol.sol;
+        currentDateElement.innerText = displayDate(selectedSol.date);
+        currentTempHighElement.innerText = displayTemperature(
+          selectedSol.maxTemp
+        );
+        currentTempLowElement.innerText = displayTemperature(
+          selectedSol.minTemp
+        );
+        windSpeedElement.innerText = displaySpeed(selectedSol.windSpeed);
+        windDirectionArrow.style.setProperty(
+          "--direction",
+          `${selectedSol.windDirectionDegrees}deg`
+        );
+        windDirectionText.innerText = selectedSol.windDirectionCardinal;
+      }
 
-  function displayDate(date) {
-    return date.toLocaleDateString(
-      undefined,
-      { day: 'numeric', month: 'long' }
-    )
-  }
+      function displayDate(date) {
+        return date.toLocaleDateString(undefined, {
+          day: "numeric",
+          month: "long"
+        });
+      }
 
-  function displayTemperature(temperature) {
-    let returnTemp = temperature
-    if (!isMetric()) {
-      returnTemp = temperature * (9 / 5) +32
-  //		returnTemp = (temperature - 32) * (5 / 9)
-    }
-    return Math.round(returnTemp)
-  }
+      function displayTemperature(temperature) {
+        let returnTemp = temperature;
+        if (!isMetric()) {
+          returnTemp = temperature * (9 / 5) + 32;
+          //		returnTemp = (temperature - 32) * (5 / 9)
+        }
+        return Math.round(returnTemp);
+      }
 
-  function displaySpeed(speed) {
-    let returnSpeed = speed
-    if (!isMetric()) {
-      returnSpeed = speed / 1.609
-    }
-    return Math.round(returnSpeed)
-  }
+      function displaySpeed(speed) {
+        let returnSpeed = speed;
+        if (!isMetric()) {
+          returnSpeed = speed / 1.609;
+        }
+        return Math.round(returnSpeed);
+      }
 
+      function getWeather() {
+        return fetch(API_URL)
+          .then(res => res.json())
+          .then(data => {
+            const { sol_keys, validity_checks, ...solData } = data;
+            return Object.entries(solData).map(([sol, data]) => {
+              return {
+                sol: sol,
+                maxTemp: data?.AT?.mx,
+                minTemp: data?.AT?.mn,
+                windSpeed: data?.HWS?.av,
+                windDirectionDegrees: data.WD.most_common?.compass_degrees,
+                windDirectionCardinal: data.WD.most_common?.compass_point,
+                date: new Date(data.First_UTC)
+              };
+            });
+          });
+      }
 
-  function getWeather() {
-    return fetch(API_URL)
-      .then(res => res.json())
-      .then(data => {
-        const {
-          sol_keys,
-          validity_checks,
-          ...solData
-        } = data
-        return Object.entries(solData).map(([sol, data]) => {
-          return {
-                      sol:sol,
-                      maxTemp: data?.AT?.mx,
-                      minTemp: data?.AT?.mn,
-                      windSpeed: data?.HWS?.av,
-                      windDirectionDegrees: data.WD.most_common?.compass_degrees,
-                      windDirectionCardinal: data.WD.most_common?.compass_point,
-                      date: new Date(data.First_UTC)
-          }
-        })
-      })
-  }
+      function updateUnits() {
+        const speedUnits = document.querySelectorAll("[data-speed-unit]");
+        const tempUnits = document.querySelectorAll("[data-temp-unit]");
+        speedUnits.forEach(unit => {
+          unit.innerText = isMetric() ? "kph" : "mph";
+        });
+        tempUnits.forEach(unit => {
+          unit.innerText = isMetric() ? "C" : "F";
+        });
+      }
 
-  function updateUnits() {
-    const speedUnits = document.querySelectorAll('[data-speed-unit]')
-    const tempUnits = document.querySelectorAll('[data-temp-unit]')
-    speedUnits.forEach(unit => {
-      unit.innerText = isMetric() ? 'kph' : 'mph'
-    })
-    tempUnits.forEach(unit => {
-      unit.innerText = isMetric() ? 'C' : 'F'
-    })
-  }
-
-  function isMetric() {
-    return metricRadio.checked
-  }
-        
-    
+      function isMetric() {
+        return metricRadio.checked;
+      }
     </script>
-    
-<!-- end of weather API -->        
-        
-        
+
+    <!-- end of weather API -->
+
     <script>
         const API_KEY_JPEG = 'EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf'
         // Adrian's api key = 'EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf'
         const API_URL_JPEG = `https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&${API_KEY_JPEG}&feedtype=json&ver=1.0`
         // const API_URL = `
         https://api.nasa.gov/mars-photos/api/v1/rovers/curiosity/photos?sol=3000&camera=NAVCAM&api_key=EZ9o518tJeu1mtZaezk8WqTcGB69Vqm3EDDJdbkf&feedtype=json&ver=1.0`
-        
+
       const curiosityRoverJpeg = document.querySelector('[img_src]')
-      
-
     </script>
-    
-
-
-
-    
-</body>
+  </body>
 </html>
