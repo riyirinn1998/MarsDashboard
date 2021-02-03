@@ -163,6 +163,7 @@ h3 {
   border-radius: 10px;
   border-color: #351205;
   background-color: rgba(53,18,5, 0.2);
+  box-sizing: border-box;
 }
 
 .panel-title {
@@ -186,6 +187,8 @@ h3 {
 .uk-grid {
   padding-top: 80px;
 }
+
+
 
 /* .gallery{
   margin: 0 auto;
@@ -362,16 +365,14 @@ h3 {
 }
 
 
-#first-rover-image{
-  margin-top: 50px;
-}
-
-.rover-info-section{
-  margin-top: 16px;
-}
 
 
-@media (max-width: 600px){
+
+
+
+
+
+@media (max-width: 600px) {}
   
   #footer-grid {
     width: 100%;
@@ -390,14 +391,7 @@ h3 {
   }
   
   
-  h1 {
-    font-family: "Orbitron", sans-serif;
-    font-style: italic;
-    color: #373fff;
-    font-size: 36px;
-    line-height: 1.2;
-    padding: 8px 8px 8px 16px;
-  }
+ 
   
   #mars-rn {
     margin-top: 85px;
@@ -408,11 +402,11 @@ h3 {
     max-width: 980px;
     padding: 0 0px;
   }
+
   
-  .gallery ul li img {
-      height: 100%;
-      width: 100%;
-  }
+  
+  
+  
   
   html {
     -webkit-background-size: cover;
@@ -423,6 +417,8 @@ h3 {
   }
   
 }
+
+
 
 @keyframes move-twink-back {
     from {background-position:0 0;}
